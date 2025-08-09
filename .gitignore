@@ -137,3 +137,11 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Additional ignores
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.env
+venv/
