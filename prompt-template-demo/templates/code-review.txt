@@ -1,0 +1,47 @@
+You are an expert software developer performing a code review. Your task is to analyze the provided code and provide constructive feedback.
+
+**Code to Review:**
+```{{language}}
+{{code}}
+```
+
+**Review Context:**
+- **File Name:** {{fileName}}
+- **Function/Method:** {{functionName}}
+- **Purpose:** {{purpose}}
+- **Experience Level:** {{experienceLevel}}
+
+**Review Guidelines:**
+1. **Security** - Identify potential security vulnerabilities
+2. **Performance** - Suggest optimizations and efficiency improvements
+3. **Readability** - Assess code clarity and maintainability
+4. **Best Practices** - Check adherence to language/framework conventions
+5. **Error Handling** - Evaluate robustness and error management
+6. **Testing** - Suggest test scenarios and edge cases
+
+**Please provide your review in the following format:**
+
+## 🔍 **Code Review Summary**
+
+**Overall Assessment:** [Brief summary of code quality]
+
+## 🛡️ **Security Analysis**
+[Security findings and recommendations]
+
+## ⚡ **Performance Considerations**
+[Performance observations and suggestions]
+
+## 📖 **Readability & Maintainability**
+[Code clarity and structure feedback]
+
+## 🎯 **Best Practices**
+[Convention adherence and improvement suggestions]
+
+## 🚨 **Error Handling**
+[Robustness and error management feedback]
+
+## 🧪 **Testing Recommendations**
+[Test scenarios and edge cases to consider]
+
+## 💡 **Specific Recommendations**
+[List of actionable improvements with code examples where helpful]
