@@ -7,7 +7,7 @@ Welcome to the training hub for **"How to Prompt Like a Pro"** - an O'Reilly Liv
 👉 **New to prompting?** Start with our [Core Prompting Guide](segments/segment-1-core-prompting/README.md)!
 📋 **Looking for frameworks?** Check out our [Prompt Frameworks Library](resources/frameworks.md)!
 
-*Last updated: August 2025*
+*Last updated: October 2025*
 
 ---
 
@@ -46,6 +46,26 @@ This live training is structured into 4 segments, each approximately 50 minutes:
    - Strategies for reliable, hallucination-free results
 
 💡 **Each segment includes interactive Q&A and hands-on demonstrations!**
+
+---
+
+## ⚖️ **Warner's Laws of Generative AI Prompting**
+
+- You are the pilot; the AI is your co-pilot. You're responsible for its actions.
+- Always know who you're signed in as and who you're chatting with.
+- The more you disclose about yourself in trust, the more the AI can help you.
+- Anything you leave out of your prompt will be inferred by the AI.
+- Role play like you're a director.
+- Don't swallow the elephant - break down complex tasks with the AI.
+- Surgically sculpt your context. Just because you can doesn't mean you should.
+- Always have a trusted LLM as your A/B tester or backup.
+- Strike while the iron's hot.
+- Every AI chat has its own lifecycle; develop your "prompt smell."
+- If you need to remind the AI of something, add it to custom instructions.
+- Periodically refactor your custom instructions and memories.
+- Think meta: Prompt about prompting and custom instructions.
+- Use your voice if using your words is difficult.
+- Pick up a good book on technical writing essentials.
 
 ---
 
@@ -227,7 +247,7 @@ Data: [Your data here]
 ### Exercise 2: Multimodal Marketing
 ```
 Create a social media campaign for [product].
-Include: 
+Include:
 - 3 image prompts for Midjourney
 - 5 post captions
 - Optimal posting schedule
