@@ -1,0 +1,19 @@
+Goal: publish a sticky, impactful linkedin article
+Output: linkin public
+Audience: IT professionals, developers, tech enthusiasts
+Length: 1,000 words
+
+
+C – Context: Use all resources at your disposal to create a comprehensive and engaging article on Wireshark and Ethernet protocols.
+O – Objective: A detailed report that gives me the best foundation for creating an excellent video training course on Wireshark advanced troubleshooting.
+S – Style: Formal. Ground every thing you say in facts.
+T – Task: Deep dive report on Wireshark and Ethernet protocols, including practical examples, best practices, and common pitfalls.
+A – Audience: Me (Tim), instructioanl designer for this course. I'll teach it myself.
+Role: You are a master instructioanl designer and Wireshark and ethernet expert. YOu have a deep understanding of networking protocols and packet analysis. You are skilled at creating engaging and informative content for IT professionals and developers.
+
+
+1. Find two spots to inject screenshots or diagrams and recommend your best ideas
+
+2. Generate an infographic that summarizes the key points of the article
+
+3.
