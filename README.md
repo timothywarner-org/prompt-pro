@@ -58,7 +58,7 @@ This live training is structured into 4 segments, each approximately 50 minutes:
 - Role play like you're a director.
 - Don't swallow the elephant - break down complex tasks with the AI.
 - Surgically sculpt your context. Just because you can doesn't mean you should.
-- Always have a trusted LLM as your A/B tester or backup.
+- Always have a trusted LLM to cross-reference responses
 - Strike while the iron's hot.
 - Every AI chat has its own lifecycle; develop your "prompt smell."
 - If you need to remind the AI of something, add it to custom instructions.
@@ -66,6 +66,9 @@ This live training is structured into 4 segments, each approximately 50 minutes:
 - Think meta: Prompt about prompting and custom instructions.
 - Use your voice if using your words is difficult.
 - Pick up a good book on technical writing essentials.
+- Protect your LLM against abuse by integating test prompts.
+- Each LLM (and vendor) has its own priorities and personality.
+- Expect breaking changes. Stay agile, adaptable, and be an eternal learner.
 
 ---
 
