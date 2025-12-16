@@ -113,14 +113,18 @@ Tone: Professional and data-driven.
 ## Repository Structure
 
 ```
+docs/                               # Reference guides + slide deck
+images/                             # Cover art, social preview assets
 segments/
-├── segment-1-core-prompting/      # Frameworks, scenarios, platform tips
-├── segment-2-multimodal-prompting/ # Image gen, vision, Copilot config
-├── segment-3-ai-notebooks/        # Workspaces, custom assistants
-└── segment-4-agentic-ai/          # Claude Code, agents, MCP demos
+├─ segment-1-core-prompting/        # Frameworks, scenarios, platform tips
+├─ segment-2-multimodal-prompting/  # Image gen, vision, Copilot config
+├─ segment-3-ai-notebooks/          # Workspaces, custom assistants
+└─ segment-4-agentic-ai/            # Claude Code, agents, MCP demos
+.github/                            # Issue templates, workflows, AI instructions
 ```
 
-**For instructors:** See [INSTRUCTOR-MANIFEST.md](INSTRUCTOR-MANIFEST.md) for delivery guide.
+**For instructors:** See [INSTRUCTOR-MANIFEST.md](INSTRUCTOR-MANIFEST.md) for delivery guide.  
+**For agents:** Review [AGENTS.md](AGENTS.md) and [CLAUDE.md](CLAUDE.md) before editing lessons.
 
 ---
 
@@ -136,6 +140,21 @@ segments/
 ## License & Contributing
 
 Licensed under [MIT](LICENSE). See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines and [AGENTS.md](AGENTS.md) for the agent-focused repository playbook.
+
+### Code of Conduct
+Participation in this project is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
+
+### Security
+Found a vulnerability or risky prompt scenario? Follow the disclosure steps in [SECURITY.md](SECURITY.md) or email Tim directly at `tim@techtrainertim.com`.
+
+---
+
+## Repo Guides & Automation
+
+- [AGENTS.md](AGENTS.md) - Contributor playbook
+- [CLAUDE.md](CLAUDE.md) - Copilot instructions
+- [INSTRUCTOR-MANIFEST.md](INSTRUCTOR-MANIFEST.md) - Run-of-show notes
+- [markdownlint.json](markdownlint.json) & [Markdownlint workflow](.github/workflows/markdownlint-autofix.yml) - spacing rules + one-click lint/autofix
 
 ---
 

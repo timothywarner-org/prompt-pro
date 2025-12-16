@@ -1,0 +1,74 @@
+
+name: Markdownlint Autofix
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install markdownlint-cli2
+        run: |
+          npm install --no-save markdownlint-cli2
+
+      - name: Lint & autofix Markdown
+        id: lint
+        env:
+          CONFIG_FILE: markdownlint.json
+        run: |
+          set -euo pipefail
+          config_path="$CONFIG_FILE"
+          if [ ! -f "$config_path" ]; then
+            echo "::error::markdownlint configuration not found at $config_path" >&2
+            exit 1
+          fi
+          echo "Using config: $config_path"
+          npx markdownlint-cli2 "**/*.md" --config "$config_path" --fix || lint_status=$?
+          if [ "${lint_status:-0}" -ne 0 ]; then
+            echo "::warning::markdownlint reported issues. Attempting to continue after autofix."
+          fi
+          if git diff --quiet; then
+            echo "clean=true" >> $GITHUB_OUTPUT
+          else
+            git status -sb
+            echo "clean=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Summarize results
+        run: |
+          if [ "${{ steps.lint.outputs.clean }}" = "true" ]; then
+            echo "😊 All Markdown files already followed the style guide!" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "🛠️ markdownlint fixed some files." >> $GITHUB_STEP_SUMMARY
+            git diff --stat >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Commit autofixes (if any)
+        if: steps.lint.outputs.clean == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore: apply markdownlint fixes"
+
+      - name: Push changes
+        if: steps.lint.outputs.clean == 'false'
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
