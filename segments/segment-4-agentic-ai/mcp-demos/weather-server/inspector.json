@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "weather": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["server.js"]
+    }
+  }
+}

@@ -1,48 +1,61 @@
 # Weather MCP Server Demo
 
-A simple Model Context Protocol (MCP) server that provides weather information for teaching and demonstration purposes.
+A sample Model Context Protocol (MCP) server that provides weather data using **tools**, **resources**, and **prompts** -- the three core MCP primitives. All data is hardcoded so no API keys are needed.
 
-## What is MCP?
+## What This Server Exposes
 
-MCP (Model Context Protocol) allows AI assistants like Claude to interact with external tools and services through a standardized protocol. This weather server demonstrates how to build a simple MCP server.
+### Tools (actions the LLM can call)
 
-## Available Tools
+- **`get_weather`** -- Return temperature, condition, humidity, wind, and forecast for a city
+- **`compare_weather`** -- Side-by-side comparison of two cities
 
-1. **get_weather** - Get current weather for a specific city
-   - Input: `city` (string) - The city name
-   - Returns: Temperature, conditions, humidity, wind, and forecast
+### Resources (data the client can read)
 
-2. **list_cities** - List all available cities
-   - No input required
-   - Returns: List of cities with available weather data
+- **`weather://cities`** -- JSON list of available cities with current temp and condition
+- **`weather://alerts`** -- JSON list of active weather alerts (Miami, Chicago, Denver)
 
-## Setup Instructions
+### Prompts (reusable prompt templates)
 
-1. Install dependencies:
-   ```bash
-   cd mcp-demos/weather-server
-   npm install
-   ```
+- **`weather-report`** (args: `city`) -- Asks the LLM to write a friendly weather report
+- **`travel-advisory`** (args: `origin`, `destination`) -- Travel advisory with packing tips and alerts
 
-2. The server is configured in `.vscode/mcp.json` and will be available in VS Code with Claude
+### Available Cities
 
-## How It Works
+Seattle, Los Angeles, New York, Miami, Chicago, Denver
 
-The server:
-- Uses the MCP SDK to create a server that communicates via stdio
-- Defines two tools that Claude can call
-- Returns mock weather data for demonstration (no API key needed!)
+## Setup
+
+```bash
+cd segments/segment-4-agentic-ai/mcp-demos/weather-server
+npm install
+```
+
+## Running in VS Code with GitHub Copilot
+
+The repo includes `.vscode/mcp.json` which registers this server automatically. After running `npm install`:
+
+1. Open this repo in VS Code
+2. Open Copilot Chat (Ctrl+Shift+I)
+3. The weather server tools appear under the MCP tools icon
+4. Try: *"What's the weather in Seattle?"*
+
+## Running in MCP Inspector
+
+```bash
+npx @modelcontextprotocol/inspector node server.js
+```
+
+This opens a browser UI where you can:
+
+- Browse and call each **tool** with test inputs
+- Read each **resource** URI
+- List and invoke each **prompt** with arguments
+- See the raw JSON-RPC messages
 
 ## Teaching Points
 
-1. **Simple Implementation** - Shows basic MCP server structure
-2. **No External Dependencies** - Uses hardcoded data for reliability in demos
-3. **Clear Tool Design** - Demonstrates good tool naming and descriptions
-4. **Error Handling** - Shows how to handle missing cities gracefully
-
-## Example Usage in Claude
-
-Once configured, you can ask Claude:
-- "What's the weather in Seattle?"
-- "Show me all available cities"
-- "Compare weather between New York and Miami"
+1. **Three MCP primitives** -- Tools, Resources, and Prompts each serve a different purpose
+2. **No external dependencies** -- Hardcoded data keeps demos reliable
+3. **Rich descriptions** -- Every tool, resource, and prompt has a description that helps the LLM (and Inspector) understand what it does
+4. **Error handling** -- Requesting an unknown city returns a helpful error with available options
+5. **High-level API** -- Uses `McpServer.registerTool`, `registerResource`, and `registerPrompt` (the current recommended SDK pattern)
