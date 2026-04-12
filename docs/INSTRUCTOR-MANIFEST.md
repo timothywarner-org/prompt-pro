@@ -20,12 +20,12 @@ Quick navigation guide for delivering the 4-segment O'Reilly Live Learning cours
 - Sample documents for Notebook demos (quarterly reports, proposals)
 - Code screenshots for vision demos
 - Sample repo with `.github/copilot-instructions.md`
-- MCP weather server in `segments/segment-4-agentic-ai/mcp-demos/`
+- MCP weather server in `segments/segment-4-agentic-orchestration/mcp-demos/`
 
 ---
 
 ## Segment 1: Core Prompting & Context Engineering
-**File:** [segments/segment-1-core-prompting/README.md](segments/segment-1-core-prompting/README.md)
+**File:** [segments/segment-1-identity-mindset-context/README.md](segments/segment-1-identity-mindset-context/README.md)
 
 ### Teaching Flow (50 min)
 
@@ -52,7 +52,7 @@ Quick navigation guide for delivering the 4-segment O'Reilly Live Learning cours
 ---
 
 ## Segment 2: Multimodal Prompting & AI-Assisted Coding
-**File:** [segments/segment-2-multimodal-prompting/README.md](segments/segment-2-multimodal-prompting/README.md)
+**File:** [segments/segment-2-context-sculpting-technique/README.md](segments/segment-2-context-sculpting-technique/README.md)
 
 ### Teaching Flow (50 min)
 
@@ -78,7 +78,7 @@ Quick navigation guide for delivering the 4-segment O'Reilly Live Learning cours
 ---
 
 ## Segment 3: AI Workspaces—Notebooks, Projects, and Custom Assistants
-**File:** [segments/segment-3-ai-notebooks/README.md](segments/segment-3-ai-notebooks/README.md)
+**File:** [segments/segment-3-workflow-multimodal-security/README.md](segments/segment-3-workflow-multimodal-security/README.md)
 
 ### Teaching Flow (50 min)
 
@@ -104,12 +104,12 @@ Quick navigation guide for delivering the 4-segment O'Reilly Live Learning cours
 - M365 Agents can orchestrate multi-step enterprise workflows
 
 ### Sample Knowledge Files
-- `segments/segment-3-ai-notebooks/knowledge/choose-an-agile-approach/` - Use this as example content for Notebook demo
+- `segments/segment-3-workflow-multimodal-security/knowledge/choose-an-agile-approach/` - Use this as example content for Notebook demo
 
 ---
 
 ## Segment 4: Agentic AI—Autonomous Coding and Enterprise Agents
-**File:** [segments/segment-4-agentic-ai/README.md](segments/segment-4-agentic-ai/README.md)
+**File:** [segments/segment-4-agentic-orchestration/README.md](segments/segment-4-agentic-orchestration/README.md)
 
 ### Teaching Flow (50 min)
 
@@ -125,7 +125,7 @@ Quick navigation guide for delivering the 4-segment O'Reilly Live Learning cours
 ### Key Demos to Prepare
 1. **Claude Code**: Run `claude "Add a simple feature..."` in terminal, show checkpoint/rewind
 2. **GitHub Copilot Agent**: Have an issue ready to assign to @copilot (or show session view)
-3. **MCP Server**: Weather server in `segments/segment-4-agentic-ai/mcp-demos/weather-server/`
+3. **MCP Server**: Weather server in `segments/segment-4-agentic-orchestration/mcp-demos/weather-server/`
 
 ### Talking Points
 - Claude Code = terminal-first, sandboxed, checkpoint safety
@@ -134,7 +134,7 @@ Quick navigation guide for delivering the 4-segment O'Reilly Live Learning cours
 
 ### MCP Demo Setup
 ```bash
-cd segments/segment-4-agentic-ai/mcp-demos/weather-server
+cd segments/segment-4-agentic-orchestration/mcp-demos/weather-server
 npm install
 # Then restart VS Code to load MCP config
 ```

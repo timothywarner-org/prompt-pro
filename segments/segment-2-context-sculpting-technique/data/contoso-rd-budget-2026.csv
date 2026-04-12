@@ -1,0 +1,6 @@
+Project_Name,Department,Requested_Budget_USD,Priority,Status
+HealthBot Alpha,Healthcare R&D,3200000,Critical,New
+WarehouseBot v3,Core Engineering,2100000,High,Active
+AI Vision Module,AI/ML Lab,1500000,High,Active
+Battery R&D,Hardware Engineering,800000,Medium,Active
+Safety Certification,Compliance,400000,Critical,Pending

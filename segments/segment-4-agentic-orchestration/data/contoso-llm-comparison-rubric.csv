@@ -1,0 +1,7 @@
+Criterion,Weight,ChatGPT_Score,Claude_Score,Gemini_Score,Notes
+Accuracy,25,,,,Are cited facts and competitor details verifiable and correct?
+Creativity,15,,,,Does the strategy surface non-obvious partnerships or market angles?
+Structure,20,,,,Is the output well-organized with clear sections and logical flow?
+Actionability,20,,,,Are recommendations specific enough to hand to a VP of Strategy?
+Hallucination_Risk,10,,,,Higher score means lower hallucination risk. Did the model fabricate sources or data?
+Tone_Match,10,,,,Does the tone match a senior strategy consultant briefing a CEO?

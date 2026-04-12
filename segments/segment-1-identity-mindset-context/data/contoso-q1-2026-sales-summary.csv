@@ -1,0 +1,21 @@
+Region,Product_Line,Units_Sold,Revenue_USD,Quarter
+North America,WarehouseBot Pro,68,5780000,Q1 2026
+North America,WarehouseBot Lite,104,4368000,Q1 2026
+North America,LogiMover 500,146,4088000,Q1 2026
+EMEA,WarehouseBot Pro,28,2380000,Q1 2026
+EMEA,WarehouseBot Lite,43,1806000,Q1 2026
+EMEA,LogiMover 500,54,1512000,Q1 2026
+APAC,WarehouseBot Pro,10,850000,Q1 2026
+APAC,WarehouseBot Lite,22,924000,Q1 2026
+APAC,LogiMover 500,31,868000,Q1 2026
+LATAM,WarehouseBot Pro,4,340000,Q1 2026
+LATAM,WarehouseBot Lite,12,504000,Q1 2026
+LATAM,LogiMover 500,18,504000,Q1 2026
+North America,WarehouseBot Pro,7,595000,Q1 2026
+North America,WarehouseBot Lite,15,630000,Q1 2026
+EMEA,WarehouseBot Pro,3,255000,Q1 2026
+EMEA,LogiMover 500,9,252000,Q1 2026
+APAC,WarehouseBot Lite,5,210000,Q1 2026
+APAC,LogiMover 500,10,280000,Q1 2026
+LATAM,WarehouseBot Lite,4,168000,Q1 2026
+LATAM,LogiMover 500,7,196000,Q1 2026

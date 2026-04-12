@@ -9,7 +9,7 @@
 ## Quick Setup
 
 ```bash
-cd segments/segment-4-agentic-ai/mcp-demos/weather-server
+cd segments/segment-4-agentic-orchestration/mcp-demos/weather-server
 npm install
 ```
 
@@ -18,7 +18,7 @@ npm install
 MCP Inspector is a browser-based tool for exploring any MCP server interactively.
 
 ```bash
-cd segments/segment-4-agentic-ai/mcp-demos/weather-server
+cd segments/segment-4-agentic-orchestration/mcp-demos/weather-server
 npx @modelcontextprotocol/inspector node server.js
 ```
 

@@ -26,7 +26,7 @@ Seattle, Los Angeles, New York, Miami, Chicago, Denver
 ## Setup
 
 ```bash
-cd segments/segment-4-agentic-ai/mcp-demos/weather-server
+cd segments/segment-4-agentic-orchestration/mcp-demos/weather-server
 npm install
 ```
 

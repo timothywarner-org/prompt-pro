@@ -14,14 +14,14 @@
 
 ## Coding Style & Naming Conventions
 - Markdown first: keep headings sentence-case, include blank lines around headings and lists (see `markdownlint.json` for enforced spacing).
-- Keep directories kebab-case and prefer descriptive filenames (`segment-3-ai-notebooks/overview.md`).
+- Keep directories kebab-case and prefer descriptive filenames (`segment-3-workflow-multimodal-security/overview.md`).
 - For screenshots or diagrams, export optimized PNGs/JPGs to `images/` and reference them with relative paths in lesson READMEs.
 - Use emoji sparingly in course text; reserve them for callouts or exercises where they aid scannability.
 
 ## Testing Guidelines
 - Run the markdownlint command (see above) before opening PRs; the Actions workflow `Markdownlint Autofix` can clean spacing, but manual review avoids noisy diffs.
 - When editing slide decks, export a PDF preview to verify fonts and charts before sharing with learners.
-- For MCP or agent demos inside `segments/segment-4-agentic-ai/mcp-demos/`, document manual test steps in the segment README since automated tests are out of scope for this repo.
+- For MCP or agent demos inside `segments/segment-4-agentic-orchestration/mcp-demos/`, document manual test steps in the segment README since automated tests are out of scope for this repo.
 
 ## Commit & Pull Request Guidelines
 - Follow the existing short, imperative subjects visible in `git log` (e.g., `add warner's laws in advance of Oct 2025 delivery`); mention the delivery window or artifact touched when it adds clarity.

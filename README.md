@@ -8,7 +8,7 @@
 
 An **O'Reilly Live Learning** course teaching business professionals how to extract maximum value from AI tools like Microsoft 365 Copilot, ChatGPT, Claude, and Google Gemini.
 
-*Last updated: December 2025*
+*Last updated: April 2026*
 
 ---
 
@@ -16,10 +16,10 @@ An **O'Reilly Live Learning** course teaching business professionals how to extr
 
 | # | Segment | Duration | Key Topics |
 |---|---------|----------|------------|
-| 1 | [**Core Prompting & Context Engineering**](segments/segment-1-core-prompting/) | 50 min | CRAFT/CLEAR frameworks, context engineering stack, with/without context scenarios |
-| 2 | [**Multimodal Prompting & AI-Assisted Coding**](segments/segment-2-multimodal-prompting/) | 50 min | Imagen 3, DALL-E 3, vision analysis, GitHub Copilot instruction files |
-| 3 | [**AI Workspaces & Custom Assistants**](segments/segment-3-ai-notebooks/) | 50 min | M365 Notebooks, ChatGPT Projects, Gemini Gems, Custom GPTs, M365 Agents |
-| 4 | [**Agentic AI & Autonomous Coding**](segments/segment-4-agentic-ai/) | 50 min | Claude Code, GitHub Copilot Coding Agent, Copilot Studio, MCP |
+| 1 | [**Identity, Mindset & Context Foundations**](segments/segment-1-identity-mindset-context/) | 50 min | Pilot/copilot, anchor trap, prompt smell, context disclosure, inference |
+| 2 | [**Context Sculpting & Prompting Technique**](segments/segment-2-context-sculpting-technique/) | 50 min | Role-play, task decomposition, few-shot, chain-of-thought, meta-prompting |
+| 3 | [**Workflow, Multimodal & Security**](segments/segment-3-workflow-multimodal-security/) | 50 min | Custom instructions, prompt versioning, voice, cross-referencing, privacy |
+| 4 | [**Agentic Orchestration & Resilience**](segments/segment-4-agentic-orchestration/) | 50 min | LLM matching, subagents, checkpoints, MCP, Copilot Studio, breaking changes |
 
 ---
 
@@ -27,22 +27,30 @@ An **O'Reilly Live Learning** course teaching business professionals how to extr
 
 1. You are the pilot; the AI is your co-pilot. You're responsible for its actions.
 2. Always know who you're signed in as and who you're chatting with.
-3. The more you disclose about yourself in trust, the more the AI can help you.
-4. Anything you leave out of your prompt will be inferred by the AI.
-5. Role play like you're a director.
-6. Don't swallow the elephant—break down complex tasks with the AI.
-7. Surgically sculpt your context. Just because you can doesn't mean you should.
-8. Always have a trusted LLM to cross-reference responses.
-9. Strike while the iron's hot.
-10. Every AI chat has its own lifecycle; develop your "prompt smell."
-11. If you need to remind the AI of something, add it to custom instructions.
-12. Periodically refactor your custom instructions and memories.
-13. Think meta: Prompt about prompting and custom instructions.
-14. Use your voice if using your words is difficult.
-15. Pick up a good book on technical writing essentials.
-16. Protect your LLM against abuse by integrating test prompts.
-17. Each LLM (and vendor) has its own priorities and personality.
-18. Expect breaking changes. Stay agile, adaptable, and be an eternal learner.
+3. Beware the anchor trap — draft before you prompt.
+4. Trust your gut — never hesitate to second-guess the AI.
+5. Every AI chat has its own lifecycle; develop your "prompt smell."
+6. The more you disclose in trust, the more the AI can help you.
+7. Anything you leave out of your prompt will be inferred by the AI.
+8. Surgically sculpt your context. Just because you can doesn't mean you should.
+9. Role play like you're a director.
+10. Don't swallow the elephant — break down complex tasks with the AI.
+11. Show, don't tell — lead with examples.
+12. Make the AI show its work.
+13. Think meta: prompt about prompting and custom instructions.
+14. Strike while the iron's hot.
+15. If you need to remind the AI of something, add it to custom instructions.
+16. Periodically refactor your custom instructions and memories.
+17. Treat prompts as assets — version-control them.
+18. Use your voice if using words is difficult.
+19. Pick up a good book on technical writing.
+20. Always have a trusted LLM to cross-reference responses.
+21. Protect your LLM against abuse by integrating test prompts.
+22. Protect privacy ruthlessly. Know your chat storage, licensing, and data retention.
+23. Each LLM has its own personality. Match the tool to the task.
+24. Orchestrate subagents as force multipliers. Use git worktrees for parallelism.
+25. Checkpoint before consequence — autonomous does not mean unsupervised.
+26. Expect breaking changes. Stay agile, adaptable, and be an eternal learner.
 
 ---
 
@@ -70,6 +78,7 @@ An **O'Reilly Live Learning** course teaching business professionals how to extr
 - **Claude Code** — Terminal-based autonomous coding with checkpoints
 - **GitHub Copilot Coding Agent** — Issue-to-PR cloud automation
 - **M365 Copilot Studio** — Enterprise multi-agent orchestration
+- **Azure AI Foundry** — Azure-hosted model deployment and orchestration
 
 ---
 
@@ -116,14 +125,15 @@ Tone: Professional and data-driven.
 docs/                               # Reference guides + slide deck
 images/                             # Cover art, social preview assets
 segments/
-├─ segment-1-core-prompting/        # Frameworks, scenarios, platform tips
-├─ segment-2-multimodal-prompting/  # Image gen, vision, Copilot config
-├─ segment-3-ai-notebooks/          # Workspaces, custom assistants
-└─ segment-4-agentic-ai/            # Claude Code, agents, MCP demos
+├─ segment-1-identity-mindset-context/      # Laws 1-7, anchor trap, context foundations
+├─ segment-2-context-sculpting-technique/   # Laws 8-14, few-shot, chain-of-thought
+├─ segment-3-workflow-multimodal-security/  # Laws 15-22, versioning, privacy
+└─ segment-4-agentic-orchestration/         # Laws 23-26, subagents, MCP demos
 .github/                            # Issue templates, workflows, AI instructions
+COURSE-PLAN-APRIL-2026.md          # April 2026 delivery plan
 ```
 
-**For instructors:** See [INSTRUCTOR-MANIFEST.md](INSTRUCTOR-MANIFEST.md) for delivery guide.  
+**For instructors:** See [INSTRUCTOR-MANIFEST.md](docs/INSTRUCTOR-MANIFEST.md) for delivery guide.  
 **For agents:** Review [AGENTS.md](AGENTS.md) and [CLAUDE.md](CLAUDE.md) before editing lessons.
 
 ---
@@ -153,7 +163,8 @@ Found a vulnerability or risky prompt scenario? Follow the disclosure steps in [
 
 - [AGENTS.md](AGENTS.md) - Contributor playbook
 - [CLAUDE.md](CLAUDE.md) - Copilot instructions
-- [INSTRUCTOR-MANIFEST.md](INSTRUCTOR-MANIFEST.md) - Run-of-show notes
+- [INSTRUCTOR-MANIFEST.md](docs/INSTRUCTOR-MANIFEST.md) - Run-of-show notes
+- [COURSE-PLAN-APRIL-2026.md](COURSE-PLAN-APRIL-2026.md) - April 2026 delivery plan
 - [markdownlint.json](markdownlint.json) & [Markdownlint workflow](.github/workflows/markdownlint-autofix.yml) - spacing rules + one-click lint/autofix
 
 ---
