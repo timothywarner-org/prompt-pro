@@ -13,7 +13,7 @@ Step into the future of AI with autonomous agents that work independently. Maste
 ## The Agentic AI Landscape (2025)
 
 | Agent | Primary Use | Key Feature |
-|-------|-------------|-------------|
+| ----- | ----------- | ----------- |
 | **Claude Code** | Terminal-based autonomous coding | Sandboxed execution, checkpoints |
 | **GitHub Copilot Coding Agent** | Issue-to-PR automation | Cloud-based, GitHub-native |
 | **M365 Copilot Studio Agents** | Enterprise workflow automation | Multi-agent orchestration, 1400+ connectors |
@@ -25,35 +25,41 @@ Step into the future of AI with autonomous agents that work independently. Maste
 ## Claude Code: Terminal-Based Autonomous Coding
 
 ### What It Is
+
 An agentic coding tool from Anthropic that lives in your terminal, understands your codebase, and helps you code faster through natural language commands. It executes tasks, explains code, handles git workflows, and operates autonomously with safety guardrails.
 
 ### Key Capabilities (December 2025)
 
 #### Sandboxed Execution
+
 - **Filesystem isolation**: Claude can only access specified directories
 - **Network isolation**: Only connects to approved servers
 - **84% reduction in permission prompts** compared to unsandboxed operation
 - Protection against prompt injection attacks
 
 #### Checkpoints for Safe Experimentation
+
 - Automatically saves code state before each change
 - Instant rewind with `Esc Esc` or `/rewind` command
 - Enables ambitious, wide-scale refactoring with confidence
 - Perfect for "what if" exploration
 
 #### Parallel Development with Subagents
+
 - Delegate specialized tasks to subagents
 - Example: One agent builds backend API while main agent builds frontend
 - Background tasks for long-running processes (dev servers, builds)
 - Hooks for automated actions (run tests after changes, lint before commits)
 
 #### Claude Code on the Web
+
 - Run Claude Code in an isolated cloud sandbox
 - Connect GitHub repositories without local setup
 - Kick off coding sessions from anywhere
 - Safe separation of credentials from execution environment
 
 #### Slack Integration
+
 - Tag Claude Code directly in Slack conversations
 - Maintains full codebase awareness
 - Creates files, refactors code, runs tests
@@ -62,6 +68,7 @@ An agentic coding tool from Anthropic that lives in your terminal, understands y
 ### Sample Claude Code Workflows
 
 #### Feature Development
+
 ```bash
 # In your terminal
 claude "Add a user authentication system to this Express app.
@@ -73,9 +80,10 @@ Include:
 - Basic rate limiting
 
 Run tests after implementation."
-```
+```text
 
 #### Bug Investigation
+
 ```bash
 claude "Users are reporting that the checkout flow fails intermittently.
 Investigate:
@@ -86,6 +94,7 @@ Investigate:
 ```
 
 #### Code Review and Refactoring
+
 ```bash
 claude "Review the /src/services directory for:
 - Code duplication that should be abstracted
@@ -94,9 +103,10 @@ claude "Review the /src/services directory for:
 - Performance concerns
 
 Create a refactoring plan, then implement the top 3 improvements."
-```
+```text
 
 #### Documentation Generation
+
 ```bash
 claude "Generate comprehensive documentation for this codebase:
 - README with setup instructions
@@ -112,11 +122,13 @@ Follow our existing doc style in /docs."
 ## GitHub Copilot Coding Agent
 
 ### What It Is
+
 A GitHub-hosted, autonomous AI developer that works independently in the background to complete development tasks. Assign a GitHub issue to Copilot, and it implements features, fixes bugs, and makes changes across your repository.
 
 ### Key Capabilities (December 2025)
 
 #### How It Works
+
 1. **Assign an issue** to Copilot (or delegate from VS Code chat)
 2. Agent explores the repository in its own secure cloud environment
 3. Makes changes, validates with your tests and linter
@@ -125,12 +137,14 @@ A GitHub-hosted, autonomous AI developer that works independently in the backgro
 6. **Iterate** through PR review comments
 
 #### Cloud-Based Execution
+
 - Runs in secure GitHub Actions-powered environment
 - Uses your repo's test suite for validation
 - Respects your linting and formatting rules
 - No local resources consumed
 
 #### Ideal Task Complexity
+
 - Low-to-medium complexity tasks
 - Well-tested codebases (agent validates its own work)
 - Adding features, fixing bugs
@@ -139,6 +153,7 @@ A GitHub-hosted, autonomous AI developer that works independently in the backgro
 - **Multiple issues in parallel**
 
 #### Access & Pricing
+
 - Available to Copilot Enterprise, Pro+, and Business users
 - Uses premium requests (one per model request)
 - Available in GitHub Enterprise Cloud with data residency
@@ -146,6 +161,7 @@ A GitHub-hosted, autonomous AI developer that works independently in the backgro
 ### Sample GitHub Copilot Agent Workflows
 
 #### Issue-to-PR Workflow
+
 ```markdown
 ## Issue: Add dark mode support to the dashboard
 
@@ -163,9 +179,10 @@ Users have requested dark mode for the dashboard. We need:
 - [ ] No flash of wrong theme on page load
 
 **Assign to:** @copilot
-```
+```text
 
 #### Bug Fix Assignment
+
 ```markdown
 ## Issue: Login button unresponsive on mobile Safari
 
@@ -187,7 +204,8 @@ Users have requested dark mode for the dashboard. We need:
 ```
 
 #### From VS Code Chat
-```
+
+```text
 @workspace /agent Create unit tests for all the utility functions
 in src/utils/. Each test file should:
 - Test all exported functions
@@ -197,6 +215,7 @@ in src/utils/. Each test file should:
 ```
 
 ### Agent Sessions View
+
 - Unified interface in VS Code to manage local and cloud agent sessions
 - Monitor progress, review changes, provide feedback
 - Available in VS Code and JetBrains, Eclipse, Xcode (coming)
@@ -206,33 +225,39 @@ in src/utils/. Each test file should:
 ## Microsoft Copilot Studio Agents
 
 ### What It Is
+
 Build enterprise-grade AI agents that extend Microsoft 365 Copilot with specialized capabilities, knowledge sources, and system integrations. Agents can automate complex workflows and operate across your organization.
 
 ### Key Capabilities (December 2025)
 
 #### Multi-Agent Orchestration
+
 - Agents hand off to other agents seamlessly
 - Example workflow: Sales agent pulls CRM data → M365 agent drafts proposal in Word → Scheduling agent books follow-ups in Outlook
 - Connected, intelligent, scalable automation
 
 #### Computer Use (Preview)
+
 - Agents operate apps and websites directly
 - Virtual mouse and keyboard for UI automation
 - Describe tasks in natural language
 - Automates processes where no API exists
 
 #### Model Context Protocol (MCP) Integration
+
 - Connect MCP servers with a few clicks
 - Extend agents without custom development
 - Provide MCP host URL, Copilot Studio handles the rest
 - 1,400+ total connectors available
 
 #### Latest Model Support
+
 - **GPT-5 Chat**: Generally available (US, EU)
 - **GPT-5.2**: Improved code generation, multilingual
 - **GPT-4.1**: Default for new agents (latency + quality gains)
 
 #### Enterprise Features
+
 - **SharePoint channel**: One-click deployment to sites
 - **WhatsApp channel**: Customer engagement
 - **Sensitivity labels**: Microsoft Purview integration
@@ -242,6 +267,7 @@ Build enterprise-grade AI agents that extend Microsoft 365 Copilot with speciali
 ### Sample Copilot Studio Agent Configurations
 
 #### Sales Assistant Agent
+
 ```yaml
 Name: Sales Deal Assistant
 
@@ -273,9 +299,10 @@ Boundaries:
 - Cannot approve discounts over 15%
 - Cannot access competitor customer lists
 - Must route enterprise deals to sales director
-```
+```text
 
 #### Customer Support Agent
+
 ```yaml
 Name: Support Tier 1 Agent
 
@@ -310,6 +337,7 @@ Escalation Rules:
 ```
 
 #### Onboarding Agent
+
 ```yaml
 Name: New Employee Onboarding Agent
 
@@ -339,22 +367,25 @@ Capabilities:
 - Schedule required training
 - Connect with assigned buddy
 - Track onboarding progress
-```
+```text
 
 ---
 
 ## Model Context Protocol (MCP) Deep Dive
 
 ### What MCP Solves
+
 The context persistence problem—making AI tools remember information across sessions, users, and applications.
 
 ### Key Concepts
+
 - **MCP Servers**: Services that provide context to AI tools
 - **Shared Context**: Multiple agents access the same information
 - **GitHub as Memory**: Use repositories for persistent storage
 - **Enterprise Patterns**: Episodic (conversation history) vs semantic (knowledge) memory
 
 ### MCP Integration Points (2025)
+
 - **Claude Desktop**: Native MCP support
 - **VS Code**: Via extensions
 - **Copilot Studio**: One-click MCP server connection
@@ -393,6 +424,7 @@ server.addTool("get_current_weather", async (location) => {
 ## Key Takeaways
 
 By the end of this segment, you'll:
+
 - ✅ Understand when to use which agentic tool
 - ✅ Set up Claude Code for autonomous development
 - ✅ Leverage GitHub Copilot's coding agent for issue-driven development
@@ -405,7 +437,7 @@ By the end of this segment, you'll:
 ## Tools We'll Use
 
 | Tool | Access | Best For |
-|------|--------|----------|
+| ---- | ------ | -------- |
 | **Claude Code** | Claude Pro/API | Terminal-based autonomous coding |
 | **Claude Code (Web)** | Claude Pro | Browser-based coding without local setup |
 | **GitHub Copilot Agent** | Enterprise/Pro+/Business | Issue-to-PR automation |
@@ -430,6 +462,7 @@ By the end of this segment, you'll:
 ## Interactive Q&A and Course Wrap-up
 
 Final Q&A focusing on:
+
 - Implementing agentic AI in your organization
 - Choosing the right agent platform for your use cases
 - Security and governance considerations

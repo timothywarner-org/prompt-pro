@@ -1,4 +1,5 @@
 # Prompt Engineering Fundamentals
+
 ## A Feynman-Style Guide to Talking with AI (December 2025)
 
 > **"If you can't explain it simply, you don't understand it well enough."** - Richard Feynman
@@ -35,7 +36,7 @@ Every effective prompt has these components. Miss one, and you'll get disappoint
 
 Tell the AI *who* it should be for this task.
 
-```
+```text
 You are a senior Python developer who specializes in clean, readable code.
 ```
 
@@ -48,7 +49,7 @@ You are a senior Python developer who specializes in clean, readable code.
 Be specific about the action. Vague tasks get vague results.
 
 | Vague | Specific |
-|-------|----------|
+| ----- | -------- |
 | "Help me with this code" | "Review this code for bugs and suggest fixes" |
 | "Write something about dogs" | "Write a 200-word blog intro about adopting senior dogs" |
 | "Analyze this data" | "Calculate the average, median, and identify outliers" |
@@ -57,7 +58,7 @@ Be specific about the action. Vague tasks get vague results.
 
 Tell the AI exactly how to structure its response.
 
-```
+```text
 Respond in this format:
 - Summary: [2 sentences]
 - Key Points: [bullet list, max 5]
@@ -70,7 +71,7 @@ Respond in this format:
 
 Set limits to focus the response.
 
-```
+```text
 - Maximum 100 words
 - Use simple language a 10-year-old would understand
 - Don't include technical jargon
@@ -85,7 +86,7 @@ Set limits to focus the response.
 
 The simplest approach. Give instructions without examples.
 
-```
+```text
 Translate the following English text to French: "Hello, how are you?"
 ```
 
@@ -95,7 +96,7 @@ Translate the following English text to French: "Hello, how are you?"
 
 Provide one example of what you want.
 
-```
+```text
 Convert the company name to its stock ticker.
 
 Example:
@@ -112,7 +113,7 @@ Ticker:
 
 Provide 3-5 examples to establish a pattern.
 
-```
+```text
 Classify the sentiment of these reviews:
 
 Review: "Absolutely loved it!" → Positive
@@ -129,12 +130,14 @@ Review: "Would definitely buy again!" →
 Add "Let's think step by step" or provide examples with reasoning steps.
 
 **Zero-shot CoT:**
-```
+
+```text
 How many r's are in "strawberry"? Let's think step by step.
 ```
 
 **Few-shot CoT:**
-```
+
+```text
 Q: If I have 3 apples and give away 1, then buy 4 more, how many do I have?
 A: Let's solve this step by step:
    - Start with 3 apples
@@ -157,20 +160,22 @@ A:
 Most LLM interfaces have two types of prompts:
 
 | System Prompt | User Prompt |
-|--------------|-------------|
+| ------------- | ----------- |
 | Sets overall behavior | Gives specific tasks |
 | Defines role, tone, constraints | Dynamic, changes per query |
 | Like a job description | Like a work request |
 | Set once, reused | Changes each interaction |
 
 **Example System Prompt:**
-```
+
+```text
 You are a helpful coding assistant. You write clean, well-commented Python code.
 You always explain your code after writing it. You never use deprecated functions.
 ```
 
 **Example User Prompt:**
-```
+
+```text
 Write a function that checks if a number is prime.
 ```
 
@@ -183,24 +188,28 @@ Write a function that checks if a number is prime.
 ## Common Mistakes (And Fixes)
 
 ### Mistake 1: Being Too Vague
-```
+
+```text
 ❌ "Help me write an email"
 ✅ "Write a professional 3-paragraph email declining a meeting invitation.
     Tone: polite but firm. Suggest rescheduling for next week."
 ```
 
 ### Mistake 2: Overloading with Instructions
-```
+
+```text
 ❌ [500 words of instructions for a simple task]
 ✅ Break into multiple prompts, or use a clear structure with headers
 ```
 
 ### Mistake 3: Not Iterating
+
 The first prompt rarely gives perfect results. Refine based on output.
 
 > *"Prompt engineering is inherently iterative. Start with an initial prompt, review the response, and refine."* — [OpenAI](https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt)
 
 ### Mistake 4: Fighting the Model's Defaults
+
 If you want verbose output from a model trained to be concise, say so explicitly. Modern models like [Gemini 3](https://promptbuilder.cc/blog/gemini-3-prompting-playbook-november-2025) provide direct answers by default—request detail if you need it.
 
 ---
@@ -219,7 +228,7 @@ If you want verbose output from a model trained to be concise, say so explicitly
 
 ## Quick Reference: Prompt Template
 
-```
+```text
 [ROLE]
 You are a [specific expertise] who [key characteristic].
 
@@ -245,7 +254,7 @@ Respond using:
 ## Further Reading
 
 | Resource | Best For |
-|----------|----------|
+| -------- | -------- |
 | [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering) | Official techniques, API users |
 | [Anthropic Prompt Engineering](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) | Claude-specific, safety-focused |
 | [Prompt Engineering Guide](https://www.promptingguide.ai/) | Comprehensive reference, all models |

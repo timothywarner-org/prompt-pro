@@ -4,10 +4,10 @@ Prompt Pro is a teaching repository, but we still treat security seriously so le
 
 ## Supported Versions
 
-| Version | Supported? |
-|---------|------------|
-| `main`  | ✅ Active maintenance for course deliveries |
-| archived tags | ⚠️ No fixes; update to `main` and rebase your workshop materials |
+| Version       | Supported?                                                         |
+| ------------- | ------------------------------------------------------------------ |
+| `main`        | ✅ Active maintenance for course deliveries                        |
+| archived tags | ⚠️ No fixes; update to `main` and rebase your workshop materials   |
 
 ## Reporting a Vulnerability
 

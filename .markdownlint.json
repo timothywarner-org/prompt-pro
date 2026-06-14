@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/markdownlint.json",
+  "default": true,
+  "MD007": {
+    "indent": 2
+  },
+  "MD012": false,
+  "MD013": false,
+  "MD022": {
+    "level": 1
+  },
+  "MD023": true,
+  "MD024": false,
+  "MD026": {
+    "punctuation": ",.;:!?"
+  },
+  "MD029": false,
+  "MD030": {
+    "ol_single": 1,
+    "ol_multi": 1,
+    "ul_single": 1,
+    "ul_multi": 1
+  },
+  "MD031": true,
+  "MD032": true,
+  "MD033": false,
+  "MD036": false,
+  "MD041": true
+}

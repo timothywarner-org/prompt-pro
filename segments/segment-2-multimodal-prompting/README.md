@@ -11,7 +11,7 @@ Go beyond text to master visual AI tools and AI-assisted coding. Learn image gen
 ## Part A: Image Generation (2025 Landscape)
 
 | Tool | Best For | Text-in-Image | Access |
-|------|----------|---------------|--------|
+| ---- | -------- | ------------- | ------ |
 | **Gemini Imagen 3** | Factual imagery, infographics | Excellent | Gemini Advanced |
 | **M365 Designer** | Brand-aligned business visuals | Good | M365 subscription |
 | **DALL-E 3** | Conversational refinement | Good | ChatGPT Plus |
@@ -22,10 +22,12 @@ Go beyond text to master visual AI tools and AI-assisted coding. Learn image gen
 ### Google Gemini + Imagen 3
 
 **Model Options:**
+
 - **Imagen 3**: State-of-the-art quality via Gemini
 - **Nano Banana Pro**: Advanced model with superior text rendering and reasoning
 
 **Key Capabilities:**
+
 - High-resolution output (up to 4K)
 - Accurate text in images (menus, diagrams, infographics)
 - SynthID watermarking for AI-generated content identification
@@ -37,7 +39,7 @@ Create a professional infographic showing 5 steps of customer onboarding.
 Modern, clean design with blue and white colors. Include numbered steps
 with icons: 1) Sign Up, 2) Verify Email, 3) Complete Profile, 4) Choose Plan,
 5) Start Using. Horizontal layout for presentation slides.
-```
+```text
 
 ```text
 Generate a social media graphic for LinkedIn announcing Q4 results.
@@ -59,7 +61,7 @@ Create a PowerPoint slide background about digital transformation.
 Style: abstract, professional, subtle gradients in blue tones.
 Leave clean space on the right side for text overlay.
 No text in the image itself.
-```
+```text
 
 ```text
 Design a Teams meeting background that looks like a modern professional
@@ -81,7 +83,7 @@ professionals collaborating around a digital dashboard. Modern office
 setting, warm natural lighting, optimistic mood.
 
 After you generate it, I'll give feedback to refine specific elements.
-```
+```text
 
 ```text
 Generate a before/after comparison image for a productivity app.
@@ -108,7 +110,7 @@ Analyze this chart and provide:
 4. 2-3 sentence interpretation for an executive summary
 
 Output the data as a markdown table.
-```
+```text
 
 **Scenario: Process Receipts/Invoices**
 
@@ -139,7 +141,7 @@ Analyze this code:
 2. Explain what it does (junior developer audience)
 3. Point out bugs, security issues, or anti-patterns
 4. Suggest specific improvements with code examples
-```
+```text
 
 **Scenario: Whiteboard to Implementation**
 
@@ -164,7 +166,7 @@ Help me understand this error:
 - Most likely cause based on visible code
 - Step-by-step debugging approach
 - Common fixes for this type of error
-```
+```text
 
 ---
 
@@ -239,7 +241,7 @@ Python 3.11+. Poetry for dependency management.
 - Vectorized operations over loops
 - Generators for large sequences
 - Profile before optimizing
-```
+```text
 
 ---
 
@@ -298,7 +300,7 @@ Steps:
 2. Propose refactored structure
 3. Implement the refactoring
 4. Verify existing tests pass
-```
+```text
 
 **File: `.github/prompts/document.prompt.md`**
 
@@ -337,7 +339,7 @@ Format: Markdown with code blocks.
 3. Open Copilot Chat
 4. Type: #code-review
 5. Copilot performs review using your template
-```
+```text
 
 ---
 
@@ -362,7 +364,7 @@ modern conference room with city view, warm natural lighting,
 Example:
 "Analyze this architecture diagram. List all components and data flows.
 Output as numbered list. Technical audience evaluating the design."
-```
+```text
 
 ---
 

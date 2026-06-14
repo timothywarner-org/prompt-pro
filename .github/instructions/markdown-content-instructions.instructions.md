@@ -3,6 +3,8 @@ description: 'Documentation and content creation standards'
 applyTo: '**/*.md'
 ---
 
+# Markdown Content Instructions
+
 ## Markdown Content Rules
 
 The following markdown content rules are enforced in the validators:
@@ -23,7 +25,7 @@ Follow these guidelines for formatting and structuring your markdown content:
 
 - **Headings**: Use `##` for H2 and `###` for H3. Ensure that headings are used in a hierarchical manner. Place a blank line before each heading and another blank line after it. Recommend restructuring if content includes H4, and more strongly recommend for H5.
 - **Lists**: Use `-` for bullet points and `1.` for numbered lists. Indent nested lists with two spaces. Insert a blank line before and after each list.
-- **Code Blocks**: Use triple backticks (`) to create fenced code blocks. Specify the language after the opening backticks for syntax highlighting (e.g., `csharp). Leave a blank line before and after each code block.
+- **Code Blocks**: Use triple backticks (`) to create fenced code blocks. Specify the language after the opening backticks for syntax highlighting (e.g.,`csharp). Leave a blank line before and after each code block.
 - **Links**: Use `[link text](URL)` for links. Ensure that the link text is descriptive and the URL is valid.
 - **Images**: Use `![alt text](image URL)` for images. Include a brief description of the image in the alt text. Surround images with blank lines.
 - **Tables**: Use `|` to create tables. Ensure that columns are properly aligned and headers are included. Provide a blank line before and after each table.

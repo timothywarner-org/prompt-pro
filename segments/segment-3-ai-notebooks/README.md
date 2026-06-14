@@ -13,7 +13,7 @@ Transform how you analyze data and manage knowledge using AI workspace tools. Le
 ## The AI Workspace Landscape (2025)
 
 | Platform | Workspace Feature | Custom Assistant |
-|----------|------------------|------------------|
+| -------- | ---------------- | ---------------- |
 | **Microsoft 365** | Copilot Notebooks | M365 Agents (Copilot Studio) |
 | **ChatGPT** | Projects | Custom GPTs |
 | **Claude** | Projects | Project-based customization |
@@ -25,9 +25,11 @@ Transform how you analyze data and manage knowledge using AI workspace tools. Le
 ## Microsoft 365 Copilot Notebooks
 
 ### What It Is
+
 An AI-powered workspace that consolidates all relevant content for your tasks or projects into one environment. Ask questions, generate content, and gain insights based on your selected materials.
 
 ### Key Capabilities (December 2025)
+
 - **100-file support**: Ground responses on up to 100 files without compromising quality
 - **Multi-format sources**: Word docs, PowerPoint decks, Excel sheets, Copilot chats, OneNote pages, meeting notes
 - **Audio Overview**: Generate podcast-style discussions of your content with two AI hosts
@@ -36,6 +38,7 @@ An AI-powered workspace that consolidates all relevant content for your tasks or
 - **Mobile Access**: Full notebook functionality in the M365 Copilot mobile app
 
 ### Best Use Cases
+
 - Quarterly business reviews across multiple reports
 - Project documentation synthesis
 - Onboarding materials compilation
@@ -44,7 +47,7 @@ An AI-powered workspace that consolidates all relevant content for your tasks or
 
 ### Sample Prompts for M365 Copilot Notebooks
 
-```
+```text
 Analyze all documents in this notebook and create:
 1. A unified executive summary (max 500 words)
 2. Key themes that appear across multiple documents
@@ -55,7 +58,7 @@ Analyze all documents in this notebook and create:
 Cite which document each finding comes from.
 ```
 
-```
+```text
 I need to prepare for a board meeting. From these materials:
 - Extract all financial metrics and their trends
 - Identify risks mentioned anywhere
@@ -70,9 +73,11 @@ Format for quick scanning during the meeting.
 ## ChatGPT Projects
 
 ### What It Is
+
 Dedicated project spaces that group related conversations, files, and custom instructions. Each project maintains its own context and behavior settings.
 
 ### Key Capabilities (December 2025)
+
 - **Project-level custom instructions**: Tailor ChatGPT's behavior per project
 - **Persistent file storage**: Up to 40 files for Pro users
 - **Conversation grouping**: Keep related chats organized
@@ -81,6 +86,7 @@ Dedicated project spaces that group related conversations, files, and custom ins
 - **Cross-platform sync**: Web, desktop, iOS, and Android
 
 ### Best Use Cases
+
 - Product development workflows
 - Client engagement tracking
 - Research projects with evolving documents
@@ -89,7 +95,7 @@ Dedicated project spaces that group related conversations, files, and custom ins
 
 ### Sample Project Setup
 
-```
+```text
 Project: Q1 Marketing Campaign
 
 Custom Instructions:
@@ -109,7 +115,7 @@ Files attached:
 
 ### Sample Prompts for ChatGPT Projects
 
-```
+```text
 Based on all the materials in this project, draft 5 email subject lines
 for our product launch. Each should:
 - Be under 50 characters
@@ -118,7 +124,7 @@ for our product launch. Each should:
 - Include an A/B variant
 ```
 
-```
+```text
 Review the conversation history in this project and create a
 "decisions made" document that captures:
 - All decisions we've finalized
@@ -132,9 +138,11 @@ Review the conversation history in this project and create a
 ## Claude Projects
 
 ### What It Is
+
 Anthropic's workspace feature for organizing knowledge bases and maintaining context across sessions. Projects support long-document analysis and multi-document synthesis.
 
 ### Key Capabilities
+
 - **Large context window**: Analyze extensive documents in full
 - **Knowledge base creation**: Upload and organize reference materials
 - **Custom instructions**: Set project-specific behavior
@@ -142,6 +150,7 @@ Anthropic's workspace feature for organizing knowledge bases and maintaining con
 - **Multi-document synthesis**: Draw insights from multiple sources
 
 ### Best Use Cases
+
 - Legal document review and comparison
 - Technical documentation maintenance
 - Long-form content creation
@@ -150,7 +159,7 @@ Anthropic's workspace feature for organizing knowledge bases and maintaining con
 
 ### Sample Prompts for Claude Projects
 
-```
+```text
 I've uploaded our complete employee handbook and three competitor
 handbooks. Please:
 
@@ -163,7 +172,7 @@ handbooks. Please:
 Prioritize findings by business impact.
 ```
 
-```
+```text
 Using the technical documentation in this project, create a
 troubleshooting guide for our support team. Structure it as:
 
@@ -181,9 +190,11 @@ Cover the 20 most common issues based on the support tickets I've uploaded.
 ## Google Gemini Gems
 
 ### What It Is
+
 Custom AI assistants you create within Gemini. Each Gem has its own personality, instructions, and knowledge base for specialized tasks.
 
 ### Key Capabilities
+
 - **Free to create**: Available with any Gmail account
 - **Up to 10 reference files**: Attach documents for grounding
 - **Living documents**: Connect to Google Drive for auto-updating content
@@ -191,11 +202,13 @@ Custom AI assistants you create within Gemini. Each Gem has its own personality,
 - **Google ecosystem integration**: Native access to Gmail, Drive, Calendar
 
 ### Limitations (as of December 2025)
+
 - Cannot share Gems with others (private only)
 - No Gem marketplace (unlike Custom GPTs)
 - More limited than Custom GPTs for complex workflows
 
 ### Best Use Cases
+
 - Personal productivity assistants
 - Role-specific helpers (writing, coding, analysis)
 - Project-specific experts
@@ -204,7 +217,7 @@ Custom AI assistants you create within Gemini. Each Gem has its own personality,
 
 ### Sample Gem Setup
 
-```
+```text
 Gem Name: Marketing Copy Editor
 
 Instructions:
@@ -230,9 +243,11 @@ Reference files: Brand guidelines, previous high-performing copy examples
 ## Custom GPTs (ChatGPT)
 
 ### What It Is
+
 Create specialized versions of ChatGPT with custom instructions, knowledge, and capabilities. Can be shared publicly or kept private.
 
 ### Key Capabilities
+
 - **Custom instructions**: Define personality and behavior
 - **Knowledge upload**: Up to 20 files per GPT
 - **Actions/API connections**: Connect to external services
@@ -241,7 +256,7 @@ Create specialized versions of ChatGPT with custom instructions, knowledge, and 
 
 ### Sample Custom GPT Configuration
 
-```
+```text
 Name: Contract Review Assistant
 
 Description: Helps legal teams quickly review and summarize contracts
@@ -278,9 +293,11 @@ Conversation starters:
 ## Microsoft 365 Agents (Copilot Studio)
 
 ### What It Is
+
 Build custom AI agents that extend Microsoft 365 Copilot with specialized capabilities, knowledge, and integrations. Agents can automate workflows and connect to enterprise systems.
 
 ### Key Capabilities (December 2025)
+
 - **Multi-agent orchestration**: Agents can hand off to other agents
 - **Computer use (preview)**: Agents operate apps and websites directly
 - **1,400+ connectors**: Power Platform, MCP, Microsoft Graph
@@ -293,7 +310,8 @@ Build custom AI agents that extend Microsoft 365 Copilot with specialized capabi
 ### Sample M365 Agent Use Cases
 
 #### IT Help Desk Agent
-```
+
+```text
 This agent helps employees with common IT issues:
 
 Knowledge sources:
@@ -312,7 +330,8 @@ Escalation: If unable to resolve, create a ticket and notify the IT team
 ```
 
 #### HR Policy Agent
-```
+
+```text
 This agent helps employees understand HR policies:
 
 Knowledge sources:
@@ -338,7 +357,7 @@ Boundaries:
 ## Comparison: When to Use What
 
 | Need | Best Tool |
-|------|-----------|
+| ---- | --------- |
 | Multi-document analysis (enterprise) | M365 Copilot Notebooks |
 | Multi-document analysis (personal) | NotebookLM, Claude Projects |
 | Ongoing project with team | ChatGPT Projects (shareable) |
@@ -364,6 +383,7 @@ Boundaries:
 ## Key Takeaways
 
 By the end of this segment, you'll:
+
 - ✅ Turn hours of document analysis into minutes
 - ✅ Create AI workspaces that maintain context across sessions
 - ✅ Build custom assistants for your specific workflows

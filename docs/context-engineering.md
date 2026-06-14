@@ -146,12 +146,14 @@ This document curates **verified, current guidance** for crafting effective prom
 ## 🎯 Tim's Pro Tips
 
 ### **For End Users:**
+
 - **Start simple** - Complex prompts often fail more than simple ones
 - **Test iteratively** - Small changes can have big impacts
 - **Use examples** - Few-shot prompting is incredibly powerful
 - **Be specific** - Vague prompts get vague results
 
 ### **For Developers:**
+
 - **Design for failure** - LLMs are probabilistic, not deterministic
 - **Implement retry logic** - Network issues and rate limits happen
 - **Use structured outputs** - Function calling is your friend

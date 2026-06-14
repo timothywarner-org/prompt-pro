@@ -1,4 +1,5 @@
 # Practical Prompting: Microsoft 365 Copilot
+
 ## Real-World Examples for M365 Copilot (December 2025)
 
 > **"Copilot doesn't work like a search engine. You get the best results when you use clear instructions, provide sources, and include specific context and format."** — [Microsoft](https://www.armanino.com/articles/microsoft-365-copilot-success-guide/)
@@ -12,12 +13,14 @@
 **Key difference from other LLMs:** Copilot works with YOUR data—emails, documents, calendars, Teams chats—within your Microsoft 365 tenant.
 
 **Key strengths:**
+
 - Deep integration with Microsoft 365 apps
 - Access to your organizational data
 - Enterprise security and compliance
 - Context-aware within each application
 
 **Official Resources:**
+
 - [Microsoft Learn: Craft Effective Prompts](https://learn.microsoft.com/en-us/training/paths/craft-effective-prompts-copilot-microsoft-365/)
 - [Microsoft Copilot Prompts Gallery](https://m365.cloud.microsoft/copilot-prompts)
 - [Azure Copilot Prompting Guide](https://learn.microsoft.com/en-us/azure/copilot/write-effective-prompts)
@@ -35,7 +38,7 @@ From [Microsoft's guidance](https://sharepointdesignworks.com/the-hidden-power-o
 ### The Four Components of a Copilot Prompt
 
 | Component | What It Does | Example |
-|-----------|--------------|---------|
+| --------- | ------------ | ------- |
 | **Goal** | What you want to achieve | "Create a summary" |
 | **Context** | Background and purpose | "for a sales meeting" |
 | **Source** | Where to find the data | "from /Q3 Sales Report.docx" |
@@ -46,12 +49,14 @@ From [Microsoft's guidance](https://sharepointdesignworks.com/the-hidden-power-o
 ## Example 1: Word — Document Drafting
 
 ### Basic Prompt (Gets Generic Results)
-```
+
+```text
 Write a project proposal.
 ```
 
 ### Better Prompt (Gets Useful Results)
-```
+
+```text
 Draft a project proposal for migrating our CRM to Dynamics 365.
 
 Context:
@@ -74,6 +79,7 @@ Length: 2-3 pages
 ```
 
 **Why this works:**
+
 - Specific goal and audience
 - Points to actual source documents
 - Clear structure expectations
@@ -83,10 +89,12 @@ Length: 2-3 pages
 ## Example 2: Excel — Data Analysis
 
 ### The Task
+
 Analyze sales data and create insights.
 
 ### The Prompt (In Excel with Copilot)
-```
+
+```text
 Analyze this sales data and tell me:
 
 1. Which product category has the highest revenue?
@@ -103,7 +111,8 @@ Summarize your findings in 3 bullet points I can share with leadership.
 ```
 
 ### Formula Help
-```
+
+```text
 Create a formula that:
 - Calculates commission at 5% of sales in column C
 - But only if the salesperson in column A is "Senior"
@@ -118,7 +127,8 @@ Explain the formula so I can modify it later.
 ## Example 3: Outlook — Email Management
 
 ### Summarizing Email Threads
-```
+
+```text
 Summarize this email thread.
 
 Focus on:
@@ -131,7 +141,8 @@ Format as bullet points I can quickly scan.
 ```
 
 ### Drafting Responses
-```
+
+```text
 Draft a reply to this email that:
 - Confirms I received the request
 - Sets expectations: I'll respond fully by Friday
@@ -141,7 +152,8 @@ Draft a reply to this email that:
 ```
 
 ### Meeting Preparation
-```
+
+```text
 Look at my calendar for tomorrow and the related email threads.
 
 Create a prep brief for each meeting:
@@ -156,7 +168,8 @@ Create a prep brief for each meeting:
 ## Example 4: PowerPoint — Presentation Creation
 
 ### From Scratch
-```
+
+```text
 Create a presentation about our Q4 marketing results.
 
 Source: Use data from /Q4 Marketing Report.xlsx
@@ -177,7 +190,8 @@ For each data slide, suggest a chart type that best represents the information.
 ```
 
 ### From Document
-```
+
+```text
 Create a presentation from /Project Alpha Proposal.docx
 
 Condense the 10-page document into 8 slides:
@@ -196,7 +210,8 @@ Keep key statistics and quotes. Suggest images for each slide.
 ## Example 5: Teams — Meeting Intelligence
 
 ### Pre-Meeting
-```
+
+```text
 I have a meeting with the Contoso team in 30 minutes.
 
 From my emails and our Teams chat history with them:
@@ -208,7 +223,8 @@ Give me 3 talking points to prepare.
 ```
 
 ### Post-Meeting Summary
-```
+
+```text
 Summarize the meeting we just had.
 
 Structure:
@@ -221,7 +237,8 @@ Format this so I can paste directly into the Teams channel.
 ```
 
 ### Chat Catch-Up
-```
+
+```text
 I've been away from this Teams channel for a week.
 
 Give me:
@@ -236,7 +253,8 @@ Give me:
 ## Example 6: Cross-App Workflows
 
 ### Finding Information Across M365
-```
+
+```text
 Find all documents and emails from the last month about the "Website Redesign" project.
 
 Summarize:
@@ -249,7 +267,8 @@ Create a single summary I can share with my manager who needs a quick update.
 ```
 
 ### Research Task
-```
+
+```text
 Our competitor Contoso just launched a new product.
 
 Search my emails and Teams for any mentions of Contoso.
@@ -266,25 +285,29 @@ Compile:
 ## Example 7: Specifying Sources (Critical)
 
 ### Good: Specific File References
-```
+
+```text
 Using the data in /Sales Q4 2024.xlsx and the template in /Report Template.docx,
 create a quarterly sales report.
 ```
 
 ### Good: Specific Email Context
-```
+
+```text
 Based on the email thread with subject "Budget Approval - Project Alpha"
 from last week, draft a follow-up email.
 ```
 
 ### Good: Limiting Scope
-```
+
+```text
 Looking only at Teams messages from the #marketing channel in the past 2 weeks,
 summarize the campaign performance discussions.
 ```
 
 ### Bad: No Source Specified
-```
+
+```text
 ❌ "Summarize our marketing performance"
    (Copilot searches everything—slow and potentially irrelevant)
 
@@ -302,7 +325,7 @@ From [Microsoft's guidance](https://regoconsulting.com/mastering-microsoft-copil
 
 > *"If the first result isn't perfect, build on the existing prompt rather than deleting and starting over."*
 
-```
+```text
 Initial: "Create a project timeline"
 ↓
 Refinement: "Make the timeline show dependencies between tasks"
@@ -313,7 +336,8 @@ Refinement: "Change the format to a Gantt chart style"
 ```
 
 ### Include Your Role
-```
+
+```text
 I'm a project manager preparing for a steering committee meeting.
 
 [Rest of prompt]
@@ -322,7 +346,8 @@ I'm a project manager preparing for a steering committee meeting.
 This helps Copilot calibrate the level of detail and focus.
 
 ### Set Communication Style
-```
+
+```text
 Write this in a style that is:
 - Professional but conversational
 - Direct without being curt
@@ -336,7 +361,7 @@ Write this in a style that is:
 
 ### Pitfall 1: Treating It Like a Search Engine
 
-```
+```text
 ❌ "What's in my emails?"
 
 ✅ "Find emails from last week about the Henderson contract
@@ -345,7 +370,7 @@ Write this in a style that is:
 
 ### Pitfall 2: Not Specifying Sources
 
-```
+```text
 ❌ "Create a report on Q4 sales"
 
 ✅ "Create a report on Q4 sales using:
@@ -356,7 +381,7 @@ Write this in a style that is:
 
 ### Pitfall 3: Vague Expectations
 
-```
+```text
 ❌ "Make this better"
 
 ✅ "Revise this to:
@@ -378,7 +403,8 @@ Explore the [Copilot Prompts Gallery](https://m365.cloud.microsoft/copilot-promp
 ## Prompt Templates for Copilot
 
 ### Document Template
-```
+
+```text
 Create a [document type] about [topic].
 
 Source: [specific files/emails]
@@ -398,7 +424,8 @@ Format:
 ```
 
 ### Analysis Template
-```
+
+```text
 Analyze [data/content] from [specific source].
 
 Questions to answer:
@@ -413,7 +440,8 @@ Then provide: [recommendations/next steps/summary]
 ```
 
 ### Communication Template
-```
+
+```text
 Write [communication type] to [recipient].
 
 Context: [Background they need to know]
@@ -434,40 +462,45 @@ Constraints:
 ## App-Specific Quick Commands
 
 ### Word
+
 | Task | Prompt Start |
-|------|--------------|
+| ---- | ------------ |
 | New document | "Draft a [type] about..." |
 | Rewrite | "Make this more [concise/formal/persuasive]" |
 | Summarize | "Summarize this document in [format]" |
 | Expand | "Add more detail about [section]" |
 
 ### Excel
+
 | Task | Prompt Start |
-|------|--------------|
+| ---- | ------------ |
 | Analyze | "What trends do you see in this data?" |
 | Formula | "Create a formula that..." |
 | Format | "Format this as a [table type]" |
 | Visualize | "Create a chart showing..." |
 
 ### PowerPoint
+
 | Task | Prompt Start |
-|------|--------------|
+| ---- | ------------ |
 | Create | "Create a presentation about..." |
 | From doc | "Turn this document into slides" |
 | Add slide | "Add a slide that shows..." |
 | Design | "Suggest a better layout for..." |
 
 ### Outlook
+
 | Task | Prompt Start |
-|------|--------------|
+| ---- | ------------ |
 | Summarize | "Summarize this thread" |
 | Draft | "Draft a reply that..." |
 | Coach | "How can I make this email more..." |
 | Find | "Find emails about..." |
 
 ### Teams
+
 | Task | Prompt Start |
-|------|--------------|
+| ---- | ------------ |
 | Catch up | "What did I miss in..." |
 | Summarize | "Summarize today's meeting" |
 | Action items | "What are the action items from..." |
@@ -478,7 +511,7 @@ Constraints:
 ## Quick Reference: Copilot Power Moves
 
 | Situation | Prompt Move |
-|-----------|-------------|
+| --------- | ----------- |
 | Need specific data | Reference exact files with `/filename` |
 | Across multiple apps | Name the apps and data sources |
 | Want consistent format | Provide a template or example |
@@ -492,7 +525,7 @@ Constraints:
 ## Further Reading
 
 | Resource | Description |
-|----------|-------------|
+| -------- | ----------- |
 | [Craft Effective Prompts (MS Learn)](https://learn.microsoft.com/en-us/training/paths/craft-effective-prompts-copilot-microsoft-365/) | Official training path |
 | [Copilot Prompts Gallery](https://m365.cloud.microsoft/copilot-prompts) | Ready-to-use templates |
 | [Azure Copilot Prompting](https://learn.microsoft.com/en-us/azure/copilot/write-effective-prompts) | Technical/developer focus |

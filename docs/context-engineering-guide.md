@@ -1,4 +1,5 @@
 # Context Engineering: Beyond Prompts
+
 ## A Feynman-Style Guide to Feeding AI Brains (December 2025)
 
 > **"Context engineering is prompt engineering's wiser older sibling."** — The AI community, 2025
@@ -33,33 +34,41 @@ Just like your computer can only work with what's loaded in RAM, an LLM can only
 According to [LlamaIndex](https://www.llamaindex.ai/blog/context-engineering-what-it-is-and-techniques-to-consider), context engineering boils down to four core strategies:
 
 ### 1. Write
+
 Create new context that didn't exist before.
 
 **Examples:**
+
 - System prompts that define behavior
 - Summary documents of long conversations
 - Procedural instructions ("memories" the AI can reference)
 
 ### 2. Select
+
 Choose which existing information to include.
 
 **Examples:**
+
 - RAG (Retrieval-Augmented Generation) — pulling relevant docs
 - Selecting which conversation history to keep
 - Picking relevant few-shot examples
 
 ### 3. Compress
+
 Reduce information while preserving meaning.
 
 **Examples:**
+
 - Summarizing long documents
 - Trimming older messages from chat history
 - Extracting key facts from verbose sources
 
 ### 4. Isolate
+
 Separate contexts across different processes.
 
 **Examples:**
+
 - Multi-agent systems where each agent has its own context
 - Sandboxed sub-tasks with focused context
 - Separate "workspaces" for different topics
@@ -71,12 +80,13 @@ Separate contexts across different processes.
 **RAG (Retrieval-Augmented Generation)** was the first widely adopted context engineering technique. It solves a fundamental problem: LLMs only know what they were trained on.
 
 **How RAG works:**
+
 1. **User asks a question**
 2. **System searches** a knowledge base for relevant documents
 3. **Relevant chunks** are added to the prompt
 4. **LLM answers** using both its training AND the retrieved context
 
-```
+```text
 [Retrieved Context]
 From Company Handbook (page 47): Vacation policy allows 20 days PTO annually...
 
@@ -100,7 +110,7 @@ Long-term memory = information that persists across conversations
 ### Three Types of Memory ([LangChain](https://blog.langchain.com/context-engineering-for-agents/))
 
 | Memory Type | What It Stores | Example |
-|-------------|----------------|---------|
+| ----------- | -------------- | ------- |
 | **Episodic** | Past experiences | "Last time you asked about X, we solved it by Y" |
 | **Procedural** | How to do things | "When user asks for code, always include tests" |
 | **Semantic** | Facts and knowledge | "User prefers Python over JavaScript" |
@@ -108,6 +118,7 @@ Long-term memory = information that persists across conversations
 ### Practical Implementation
 
 Most SaaS LLMs now offer built-in memory features:
+
 - **ChatGPT:** Memory feature stores facts across chats
 - **Claude:** Projects with uploaded files persist context
 - **Gemini:** Workspace integration remembers document context
@@ -121,6 +132,7 @@ Most SaaS LLMs now offer built-in memory features:
 More context isn't always better. [Drew Breunig](https://www.datacamp.com/blog/context-engineering) identified three ways context can hurt:
 
 ### Context Poisoning
+
 A hallucination or error makes it into the context and perpetuates.
 
 **Example:** AI incorrectly states "the deadline is March 15" in conversation. This gets saved to memory. Future questions about deadlines get wrong answers.
@@ -128,6 +140,7 @@ A hallucination or error makes it into the context and perpetuates.
 **Fix:** Validate important information before it becomes persistent context.
 
 ### Context Distraction
+
 Irrelevant information overwhelms relevant information.
 
 **Example:** You dump a 100-page document into context, but only 2 pages are relevant. The AI struggles to find the signal in the noise.
@@ -135,6 +148,7 @@ Irrelevant information overwhelms relevant information.
 **Fix:** Be selective. Pre-filter documents. Use chunking strategies that surface relevance.
 
 ### Context Confusion
+
 Contradictory information in context leads to inconsistent responses.
 
 **Example:** Two documents in context give different procedures for the same task. AI doesn't know which to follow.
@@ -172,6 +186,7 @@ Contradictory information in context leads to inconsistent responses.
 ```
 
 **Why structure matters:**
+
 - Clear sections prevent blending/confusion
 - Makes it easier to update specific parts
 - Models can better "attend" to relevant sections
@@ -184,9 +199,10 @@ Contradictory information in context leads to inconsistent responses.
 When context exceeds limits, you must compress. Here are the main approaches:
 
 ### Summarization
+
 Use an LLM to distill key information.
 
-```
+```text
 Before: [50,000 token document]
 After: [500 token summary of key points]
 ```
@@ -194,23 +210,26 @@ After: [500 token summary of key points]
 **Trade-off:** Lossy. Details are lost. Good for gist, bad for specifics.
 
 ### Trimming
+
 Remove older or less relevant content.
 
-```
+```text
 Strategy: Keep last N messages, summarize older ones
 Strategy: Keep messages mentioning key entities, drop small talk
 ```
 
 ### Selective Retrieval
+
 Don't include everything—include what's relevant.
 
-```
+```text
 Query: "What's the refund policy?"
 Retrieve: Only sections about refunds
 Skip: Shipping, FAQs about unrelated topics
 ```
 
 ### Advanced: MemAgent
+
 [Recent research](https://www.llamaindex.ai/blog/context-engineering-what-it-is-and-techniques-to-consider) shows systems like MemAgent that dynamically compress context, using reinforcement learning to decide what to keep in a fixed "memory slot."
 
 ---
@@ -226,7 +245,7 @@ One of the most powerful context engineering patterns: **split context across sp
 
 Instead of one agent with everything in context:
 
-```
+```text
 ┌─────────────────────────────────────────────────┐
 │ Orchestrator Agent                              │
 │ (Routes tasks, synthesizes results)             │
@@ -240,6 +259,7 @@ Instead of one agent with everything in context:
 ```
 
 Each agent has:
+
 - Focused context relevant to its task
 - Specific tools it can use
 - Clear boundaries
@@ -254,7 +274,7 @@ Each agent has:
 
 Before a complex task, create a briefing:
 
-```
+```text
 I'm going to work on [project]. Here's what you need to know:
 
 **Background:**
@@ -276,7 +296,7 @@ Acknowledge you understand before we proceed.
 
 For long conversations, periodically refresh context:
 
-```
+```text
 Let me summarize where we are:
 - We decided on [X]
 - We ruled out [Y] because [reason]
@@ -289,7 +309,7 @@ Is this accurate? Any corrections before we continue?
 
 When switching tasks within a conversation:
 
-```
+```text
 New task. For this, focus only on:
 - [Relevant context A]
 - [Relevant context B]
@@ -303,7 +323,7 @@ Task: [specific request]
 
 When responses seem off:
 
-```
+```text
 What context are you using to answer? List:
 1. Key facts you're relying on
 2. Assumptions you're making
@@ -321,6 +341,7 @@ According to the [July 2025 Context Engineering Survey](https://arxiv.org/abs/25
 > *"Best performance comes from modular architectures combining multiple techniques (retrieval, memory, tool use)."*
 
 **Key findings:**
+
 1. **Hybrid approaches win** — Combine RAG + memory + compression
 2. **Structure beats volume** — Organized context outperforms more context
 3. **Task-specific context** — Different tasks need different context configurations
@@ -344,7 +365,7 @@ Before sending a prompt, ask:
 ## Further Reading
 
 | Resource | Focus |
-|----------|-------|
+| -------- | ----- |
 | [Anthropic: Context Engineering for Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | Agent systems, best practices |
 | [LangChain: Context Engineering](https://blog.langchain.com/context-engineering-for-agents/) | Framework perspective |
 | [LlamaIndex: Context Engineering Guide](https://www.llamaindex.ai/blog/context-engineering-what-it-is-and-techniques-to-consider) | Techniques taxonomy |

@@ -1,4 +1,5 @@
 # Practical Prompting: Claude
+
 ## Real-World Examples for Anthropic's Claude (December 2025)
 
 > **"Claude 4.x models respond well to clear, explicit instructions. Being specific about your desired output can help enhance results."** — [Anthropic](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices)
@@ -10,11 +11,13 @@
 **What it is:** Anthropic's conversational AI, available via claude.ai (consumer) and API (developers).
 
 **Current models (Dec 2025):**
+
 - **Claude 4 Opus (4.5)** — Most capable, long-horizon reasoning
 - **Claude 4 Sonnet (4.5)** — Balanced capability and speed
 - **Claude 4 Haiku (4.5)** — Fast and efficient
 
 **Key strengths:**
+
 - Long context windows (200K tokens)
 - Excellent document analysis
 - Strong reasoning and nuance
@@ -22,6 +25,7 @@
 - Projects feature for persistent context
 
 **Official Resources:**
+
 - [Claude Prompt Engineering Overview](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) *(redirects to platform.claude.com)*
 - [Claude 4 Best Practices](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices)
 - [Anthropic Interactive Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)
@@ -47,14 +51,16 @@ From [Anthropic's blog](https://claude.com/blog/best-practices-for-prompt-engine
 Claude excels at analyzing long documents (up to 200K tokens).
 
 ### Basic Prompt
-```
+
+```text
 Summarize this document.
 
 [paste long document]
 ```
 
 ### Better Prompt
-```
+
+```text
 I'm going to share a long document. After reading it completely, please:
 
 1. **Executive Summary** (3-4 sentences): What is this document about and what's the main conclusion?
@@ -79,7 +85,8 @@ I'm going to share a long document. After reading it completely, please:
 ## Example 2: Code Generation with Testing
 
 ### The Prompt
-```
+
+```text
 Write a Python function that validates email addresses.
 
 Requirements:
@@ -97,6 +104,7 @@ Use pytest style for tests.
 ```
 
 **Why this works for Claude:**
+
 - Explicit output format (tuple type)
 - Specific request for tests (Claude 4.x won't add these unless asked)
 - Clear structure for what comes after the main code
@@ -108,10 +116,12 @@ Use pytest style for tests.
 Claude excels at showing its reasoning process.
 
 ### The Task
+
 Evaluate a business decision.
 
 ### The Prompt
-```
+
+```text
 Help me evaluate whether to build vs. buy a CRM system.
 
 Context:
@@ -157,7 +167,8 @@ Claude Projects let you upload documents that persist across conversations.
 **Project: Technical Writing Assistant**
 
 **Project Instructions (Custom System Prompt):**
-```
+
+```text
 You are a technical writing assistant for our API documentation.
 
 Key guidelines:
@@ -175,7 +186,8 @@ When I share draft documentation, compare it against these standards.
 ```
 
 ### Using the Project
-```
+
+```text
 Review this API endpoint documentation. Flag any:
 1. Style guide violations
 2. Missing error handling examples
@@ -187,6 +199,7 @@ Review this API endpoint documentation. Flag any:
 ```
 
 **Why Projects are powerful:**
+
 - Documents persist (no re-uploading)
 - Custom instructions apply to all conversations
 - Great for consistent, domain-specific work
@@ -198,10 +211,12 @@ Review this API endpoint documentation. Flag any:
 Claude handles nuance and tone well.
 
 ### The Task
+
 Write a difficult email.
 
 ### The Prompt
-```
+
+```text
 Help me write a sensitive email.
 
 Situation: A team member's performance has declined over 3 months.
@@ -235,7 +250,8 @@ Label which is which and explain the key differences.
 ## Example 6: Multi-Turn Analysis
 
 ### Turn 1: Initial Analysis
-```
+
+```text
 Analyze this market research report. Before diving in, tell me:
 1. What type of document is this?
 2. What's its apparent purpose?
@@ -248,7 +264,8 @@ Analyze this market research report. Before diving in, tell me:
 ```
 
 ### Turn 2: Directed Deep Dive
-```
+
+```text
 Good analysis. Now focus on Section 3 (Market Trends).
 
 For each trend identified:
@@ -258,7 +275,8 @@ For each trend identified:
 ```
 
 ### Turn 3: Synthesis
-```
+
+```text
 Based on our analysis, draft a 1-page executive brief that:
 - Summarizes the trustworthy findings
 - Flags areas needing more research
@@ -274,7 +292,8 @@ Based on our analysis, draft a 1-page executive brief that:
 Claude can create interactive artifacts (code, documents, diagrams).
 
 ### The Prompt
-```
+
+```text
 Create an interactive React component that visualizes a decision tree.
 
 Requirements:
@@ -287,6 +306,7 @@ Include sample JSON data for a "hiring decision" tree.
 ```
 
 **Artifact types Claude can create:**
+
 - React components
 - HTML/CSS/JS pages
 - SVG diagrams
@@ -301,7 +321,7 @@ Include sample JSON data for a "hiring decision" tree.
 
 Claude responds well to XML-style delimiters:
 
-```
+```text
 <context>
 Background information about the task
 </context>
@@ -322,7 +342,7 @@ The actual task to perform
 
 ### Asking for Self-Critique
 
-```
+```text
 After completing the task, add a section called "Self-Assessment":
 - What assumptions did you make?
 - What's the weakest part of this response?
@@ -333,7 +353,7 @@ After completing the task, add a section called "Self-Assessment":
 
 Claude tends to be appropriately uncertain. Leverage this:
 
-```
+```text
 For each claim in your response, indicate your confidence:
 - HIGH: Well-established, widely agreed upon
 - MEDIUM: Generally accepted but with some debate
@@ -350,7 +370,7 @@ If LOW on something important, suggest how to verify.
 
 Claude 4.x follows instructions precisely. If you want comprehensive treatment:
 
-```
+```text
 ❌ "Explain machine learning"
    (Gets a basic explanation)
 
@@ -367,7 +387,7 @@ Claude 4.x follows instructions precisely. If you want comprehensive treatment:
 
 Claude does better with focused tasks:
 
-```
+```text
 ❌ "Analyze this data, create visualizations, write a report,
    and suggest action items all in one response"
 
@@ -382,7 +402,7 @@ Claude does better with focused tasks:
 
 Claude can handle 200K tokens. Use it:
 
-```
+```text
 Instead of:
 "Here's a summary of our codebase..."
 
@@ -400,7 +420,8 @@ For recurring tasks, set up a Project instead of re-uploading context each time.
 ## Prompt Templates for Claude
 
 ### Analysis Template
-```
+
+```text
 <context>
 [Background/situation description]
 </context>
@@ -426,7 +447,8 @@ Structure your response as:
 ```
 
 ### Writing Template
-```
+
+```text
 <context>
 Purpose: [Why this is being written]
 Audience: [Who will read it]
@@ -451,7 +473,8 @@ Before finalizing, verify:
 ```
 
 ### Problem-Solving Template
-```
+
+```text
 <problem>
 [Clear description of the problem]
 </problem>
@@ -482,7 +505,7 @@ Please:
 ## Quick Reference: Claude Power Moves
 
 | Situation | Prompt Move |
-|-----------|-------------|
+| --------- | ----------- |
 | Need thorough answer | "Be comprehensive. Include [specific elements]" |
 | Want structured output | Use XML tags to define sections |
 | Complex document | Upload to Project for persistent context |
@@ -497,7 +520,7 @@ Please:
 ## Further Reading
 
 | Resource | Description |
-|----------|-------------|
+| -------- | ----------- |
 | [Claude Prompt Engineering](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) | Official documentation |
 | [Claude 4 Best Practices](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices) | Model-specific guidance |
 | [Context Engineering Guide](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | Advanced context management |

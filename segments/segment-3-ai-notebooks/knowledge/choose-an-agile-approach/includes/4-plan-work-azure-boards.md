@@ -1,3 +1,5 @@
+# Plan work with Azure Boards
+
 Here, you'll create a project, a team, and a board in Azure DevOps.
 
 The Tailspin team is eager to see how Azure Boards is going to work. With the pre-planning out of the way, they can start to use the tools and build the solution they planned.
@@ -49,7 +51,7 @@ Now's a good time to add members to your team. Although not required, if you'd l
 1. Enter the email address of the user you'd like to add, then select **Save**.
 1. Repeat the process for any other members you'd like to add.
 
-Mara adds entries for herself and her team members: *andy@tailspintoys.com*, *amita@tailspintoys.com*, *mara@tailspintoys.com*, and *tim@tailspintoys.com*.
+Mara adds entries for herself and her team members: *<andy@tailspintoys.com>*, *<amita@tailspintoys.com>*, *<mara@tailspintoys.com>*, and *<tim@tailspintoys.com>*.
 
 In practice, you might manage your team through an identity and access management service like Microsoft Entra ID, and set the appropriate permission levels for each team member. We'll point you to more resources at the end of this module.
 
@@ -112,7 +114,7 @@ When you create an Azure Boards project, you get an initial sprint called **Spri
 
 ### Assign tasks and set the iteration
 
-An _iteration_ is another name for a sprint.
+An *iteration* is another name for a sprint.
 
 You have an initial set of work items and a timeline for your first sprint. Here, you'll connect work items to your sprint and assign the tasks to yourself.
 

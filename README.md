@@ -15,7 +15,7 @@ An **O'Reilly Live Learning** course teaching business professionals how to extr
 ## Course Segments
 
 | # | Segment | Duration | Key Topics |
-|---|---------|----------|------------|
+| --- | --- | --- | --- |
 | 1 | [**Core Prompting & Context Engineering**](segments/segment-1-core-prompting/) | 50 min | CRAFT/CLEAR frameworks, context engineering stack, with/without context scenarios |
 | 2 | [**Multimodal Prompting & AI-Assisted Coding**](segments/segment-2-multimodal-prompting/) | 50 min | Imagen 3, DALL-E 3, vision analysis, GitHub Copilot instruction files |
 | 3 | [**AI Workspaces & Custom Assistants**](segments/segment-3-ai-notebooks/) | 50 min | M365 Notebooks, ChatGPT Projects, Gemini Gems, Custom GPTs, M365 Agents |
@@ -49,7 +49,7 @@ An **O'Reilly Live Learning** course teaching business professionals how to extr
 ## Context Engineering vs Prompt Engineering
 
 | Prompt Engineering | Context Engineering |
-|---|---|
+| --- | --- |
 | Focus on *what to say* | Focus on *what the model knows* |
 | One-off interactions | System-wide reliability |
 | Phrasing and examples | Everything in the context window |
@@ -61,12 +61,14 @@ An **O'Reilly Live Learning** course teaching business professionals how to extr
 ## Tools Covered
 
 ### Primary Platforms
+
 - **Microsoft 365 Copilot** — Notebooks, Agents, enterprise integration
 - **ChatGPT** — Projects, Custom GPTs, DALL-E 3, Vision
 - **Google Gemini** — Gems, Imagen 3, 1M+ token context
 - **Claude** — Projects, long-form analysis, Claude Code
 
 ### Agentic AI
+
 - **Claude Code** — Terminal-based autonomous coding with checkpoints
 - **GitHub Copilot Coding Agent** — Issue-to-PR cloud automation
 - **M365 Copilot Studio** — Enterprise multi-agent orchestration
@@ -76,11 +78,13 @@ An **O'Reilly Live Learning** course teaching business professionals how to extr
 ## Prerequisites
 
 ### Required
+
 - Internet connection
 - ChatGPT free account
 - Google account
 
 ### Recommended
+
 - Microsoft 365 Copilot license
 - Claude Pro
 - GitHub Copilot subscription
@@ -91,6 +95,7 @@ An **O'Reilly Live Learning** course teaching business professionals how to extr
 ## Quick Start
 
 ### CRAFT Framework
+
 ```text
 Context: [situation]
 Role: You are a [role]
@@ -100,6 +105,7 @@ Tone: [voice/style]
 ```
 
 ### Example Prompt
+
 ```text
 Context: I'm preparing a quarterly business review for my VP.
 Role: You are a senior business analyst.
@@ -112,7 +118,7 @@ Tone: Professional and data-driven.
 
 ## Repository Structure
 
-```
+```text
 docs/                               # Reference guides + slide deck
 images/                             # Cover art, social preview assets
 segments/
@@ -142,9 +148,11 @@ segments/
 Licensed under [MIT](LICENSE). See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines and [AGENTS.md](AGENTS.md) for the agent-focused repository playbook.
 
 ### Code of Conduct
+
 Participation in this project is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Security
+
 Found a vulnerability or risky prompt scenario? Follow the disclosure steps in [SECURITY.md](SECURITY.md) or email Tim directly at `tim@techtrainertim.com`.
 
 ---

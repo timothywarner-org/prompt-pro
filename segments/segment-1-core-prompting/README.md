@@ -11,7 +11,7 @@ Master prompt engineering fundamentals and the evolution to **context engineerin
 ## The Shift: Prompt Engineering → Context Engineering
 
 | Prompt Engineering | Context Engineering |
-|---|---|
+| ------------------ | ------------------- |
 | Focus on *what to say* | Focus on *what the model knows* |
 | One-off interactions | System-wide reliability |
 | Phrasing and examples | Everything in the context window |
@@ -37,9 +37,10 @@ Every AI interaction involves multiple layers of context:
 ## Prompting Frameworks
 
 ### CRAFT Framework
+
 **C**ontext → **R**ole → **A**ction → **F**ormat → **T**one
 
-```
+```text
 Context: I'm preparing a quarterly business review for my VP.
 Role: You are a senior business analyst.
 Action: Analyze this sales data and identify the top 3 trends.
@@ -48,9 +49,10 @@ Tone: Professional and data-driven.
 ```
 
 ### CLEAR Framework
+
 **C**ontext → **L**ength → **E**xamples → **A**nswer format → **R**efine
 
-```
+```text
 Context: Our customer support team is overwhelmed with password reset requests.
 Length: 2-3 paragraphs
 Examples: "Similar solutions at Acme Corp reduced tickets by 40%"
@@ -66,7 +68,7 @@ These prompts rely purely on the model's training data and your instructions.
 
 ### Scenario 1: Executive Email Draft (M365 Copilot)
 
-```
+```text
 You are a senior project manager at a Fortune 500 company.
 
 Draft a professional email to stakeholders announcing a 2-week project delay
@@ -81,7 +83,7 @@ Requirements:
 
 ### Scenario 2: Meeting Agenda Creation (ChatGPT)
 
-```
+```text
 Create a 60-minute quarterly business review meeting agenda.
 
 Attendees: Sales Director, Marketing Lead, Finance Manager, CEO
@@ -96,7 +98,7 @@ Format each section with:
 
 ### Scenario 3: Code Review Checklist (Gemini)
 
-```
+```text
 Act as a staff software engineer with 15 years of experience.
 
 Create a comprehensive code review checklist for a Python REST API project.
@@ -113,7 +115,7 @@ Mark each item as: [Critical] [Important] [Nice-to-have]
 
 ### Scenario 4: Customer Response Template (M365 Copilot)
 
-```
+```text
 You are a Customer Success Manager at a B2B SaaS company.
 
 Write a response template for customers asking about our recent pricing changes.
@@ -128,7 +130,7 @@ The template should:
 
 ### Scenario 5: Interview Question Bank (ChatGPT)
 
-```
+```text
 Generate 10 behavioral interview questions for a Senior Data Analyst position.
 
 Candidate profile: 3-5 years experience, transitioning from junior role
@@ -151,7 +153,7 @@ These demonstrate context engineering—grounding the AI in your specific materi
 
 **Setup:** Add 5 quarterly reports to a Copilot Notebook
 
-```
+```text
 Analyze all documents in this notebook and create:
 
 1. Executive summary (max 500 words) synthesizing key findings
@@ -167,7 +169,7 @@ Cite which document each finding comes from using [Q1 Report], [Q2 Report] forma
 
 **Setup:** Upload a vendor proposal PDF
 
-```
+```text
 Review the attached vendor proposal and evaluate against our requirements.
 
 Score each criterion 1-5 and provide a RAG status:
@@ -187,7 +189,7 @@ End with: Top 3 concerns and recommended negotiation points.
 
 **Setup:** Upload source code files to a ChatGPT Project
 
-```
+```text
 Using the code files in this project, create developer documentation.
 
 Include:
@@ -205,7 +207,7 @@ Tone: Practical, no fluff, include actual commands to run
 
 **Setup:** Reference a Teams meeting recording
 
-```
+```text
 From the meeting I just had, create:
 
 1. Executive summary (3 sentences max)
@@ -225,7 +227,7 @@ Format for someone who missed the meeting and has 2 minutes to scan.
 
 **Setup:** Upload competitor data spreadsheet and product docs
 
-```
+```text
 Using the attached competitive data, create an intelligence brief for our
 Product Strategy team.
 
@@ -245,18 +247,21 @@ Keep total under 800 words—this goes to executives.
 ## Platform-Specific Context Engineering
 
 ### Microsoft 365 Copilot
+
 - **Slash commands**: `/file`, `/meeting`, `/email` to specify context sources
 - **Notebooks**: Up to 100 files for deep analysis
 - **Auto-grounding**: References your M365 data automatically
 - **Tip**: "Using the Q3 Budget spreadsheet..." explicitly guides context
 
 ### Google Gemini
+
 - **1M+ token context**: Upload entire codebases or document sets
 - **Gems**: Create specialized assistants with persistent context
 - **Google Search grounding**: Real-time fact verification
 - **Tip**: Gemini excels at cross-referencing multiple large documents
 
 ### ChatGPT
+
 - **Projects**: Group files, conversations, and custom instructions
 - **Memory**: Learns preferences over time (opt-in)
 - **File connectors**: Google Drive, GitHub, OneDrive for live data
@@ -267,7 +272,7 @@ Keep total under 800 words—this goes to executives.
 ## Common Prompting Pitfalls
 
 | Pitfall | Example | Fix |
-|---------|---------|-----|
+| ------- | ------- | --- |
 | **Vague request** | "Make this better" | "Improve clarity by simplifying sentences over 25 words" |
 | **Missing context** | "Write a proposal" | "Write a proposal for [client] addressing [problem] with [solution]" |
 | **Format ambiguity** | "Analyze this data" | "Analyze this data and output a markdown table with trends column" |
@@ -289,6 +294,7 @@ Keep total under 800 words—this goes to executives.
 ## Key Takeaways
 
 By the end of this segment, you'll:
+
 - ✅ Write prompts that get useful results on the first try
 - ✅ Understand context engineering and why it matters
 - ✅ Know when to attach context vs. prompt-only approaches
