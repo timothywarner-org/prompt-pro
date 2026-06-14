@@ -19,7 +19,7 @@ Contoso Robotics department leads submit weekly status reports to CEO Maria Chen
 **Date:** 2026-01-15
 **Changelog:** Initial draft. Minimal guidance, no structure specified.
 
-```
+```text
 Write a weekly status report for my department.
 ```
 
@@ -32,7 +32,7 @@ Write a weekly status report for my department.
 **Date:** 2026-02-03
 **Changelog:** Added role assignment, explicit format requirements, and audience context. Addresses feedback that v1 outputs varied wildly in length and structure.
 
-```
+```text
 You are a department lead at Contoso Robotics, a mid-size robotics
 manufacturer in Austin, TX (500 employees, $120M revenue).
 
@@ -61,7 +61,7 @@ Constraints:
 **Date:** 2026-03-10
 **Changelog:** Added a concrete example report to anchor tone, specificity, and formatting. Addresses feedback that v2 outputs were structurally correct but lacked the right level of detail.
 
-```
+```text
 You are a department lead at Contoso Robotics, a mid-size robotics
 manufacturer in Austin, TX (500 employees, $120M revenue).
 

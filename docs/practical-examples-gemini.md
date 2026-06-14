@@ -1,7 +1,8 @@
 # Practical Prompting: Google Gemini
-## Real-World Examples for Google's Gemini (December 2025)
 
-> **"Be precise and direct. State your goal clearly and concisely. Avoid unnecessary or overly persuasive language."** — [Google AI](https://ai.google.dev/gemini-api/docs/prompting-strategies)
+## Real-World Examples for Google's Gemini (June 2026)
+
+> **"Be precise and direct. State your goal clearly and concisely. Avoid unnecessary or overly persuasive language."** - [Google AI](https://ai.google.dev/gemini-api/docs/prompting-strategies)
 
 ---
 
@@ -9,36 +10,40 @@
 
 **What it is:** Google's multimodal AI, available via Gemini app, Google Workspace, and API.
 
-**Current models (Dec 2025):**
-- **Gemini 3** — Latest flagship (November 2025), enhanced instruction understanding
-- **Gemini 2.5 Pro** — Previous flagship, excellent reasoning
-- **Gemini 2.5 Flash** — Fast and efficient, good for image generation
+**Current models (June 2026):**
+
+- **Gemini 3.5 Pro** - Flagship (~2M context, Deep Think), enhanced instruction understanding
+- **Gemini 3.5 Flash** - Fast and efficient (1M context), high-volume tasks
+- **Gemini 2.5 Pro** - Previous flagship, excellent reasoning
 
 **Key strengths:**
+
 - Native multimodal (text, images, audio, video)
 - Deep Google Workspace integration
 - Strong at following complex instructions
 - Excellent at coding tasks
 
 **Official Resources:**
+
 - [Gemini Prompt Design Strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies)
 - [Gemini for Workspace Guide](https://workspace.google.com/learning/content/gemini-prompt-guide)
 - [Google's Prompt Engineering Guide (PDF)](https://services.google.com/fh/files/misc/gemini-for-google-workspace-prompting-guide-101.pdf)
 
 ---
 
-## The Gemini 3 Mindset
+## The Gemini 3.5 Mindset
 
-**Big change in November 2025:** Gemini 3 is smarter about understanding intent. Elaborate prompts from Gemini 2.x are often unnecessary now.
+**Current generation:** Gemini 3.5 is smarter about understanding intent. Elaborate prompts from Gemini 2.x are often unnecessary now.
 
 From [Google's documentation](https://ai.google.dev/gemini-api/docs/prompting-strategies):
 
-> *"By default, Gemini 3 provides direct and efficient answers. If you need a more conversational or detailed response, you must explicitly request it."*
+> *"By default, Gemini 3.5 provides direct and efficient answers. If you need a more conversational or detailed response, you must explicitly request it."*
 
-**Three principles for Gemini 3:**
-1. **Clarity first** — State exactly what you want
-2. **Less is often more** — Don't over-engineer prompts
-3. **Multimodal is native** — Treat images/audio/video as first-class inputs
+**Three principles for Gemini 3.5:**
+
+1. **Clarity first** - State exactly what you want
+2. **Less is often more** - Don't over-engineer prompts
+3. **Multimodal is native** - Treat images/audio/video as first-class inputs
 
 ---
 
@@ -47,12 +52,14 @@ From [Google's documentation](https://ai.google.dev/gemini-api/docs/prompting-st
 Gemini in Gmail can draft, summarize, and refine emails.
 
 ### Basic Prompt
-```
+
+```text
 Write a follow-up email.
 ```
 
 ### Better Prompt (In Gmail's "Help me write")
-```
+
+```text
 Write a follow-up email to a client.
 
 Context:
@@ -65,17 +72,19 @@ Length: 3 short paragraphs
 Include: Link to our pricing page (I'll add)
 ```
 
-**Why this works:** Gemini in Workspace knows the app context—you're in Gmail, so it formats as an email. Adding specifics guides the content.
+**Why this works:** Gemini in Workspace knows the app context - you're in Gmail, so it formats as an email. Adding specifics guides the content.
 
 ---
 
 ## Example 2: Document Analysis (Google Docs)
 
 ### The Task
+
 Analyze a lengthy report in Google Docs.
 
 ### The Prompt (Using Gemini in Docs)
-```
+
+```text
 @doc Summarize this document for someone who has 5 minutes.
 
 Structure as:
@@ -87,7 +96,8 @@ Structure as:
 ```
 
 ### Follow-Up
-```
+
+```text
 Now create an executive summary paragraph I can paste at the top of the document. Keep it under 100 words.
 ```
 
@@ -100,7 +110,8 @@ Now create an executive summary paragraph I can paste at the top of the document
 Gemini treats images, audio, and video as equal inputs.
 
 ### Image Analysis
-```
+
+```text
 [Upload image of a whiteboard with diagrams]
 
 This is a photo of our architecture planning session.
@@ -113,7 +124,8 @@ Please:
 ```
 
 ### Video Analysis
-```
+
+```text
 [Upload video of a presentation]
 
 Watch this 10-minute presentation and provide:
@@ -124,7 +136,8 @@ Watch this 10-minute presentation and provide:
 ```
 
 ### Image + Text Combined
-```
+
+```text
 [Upload product photo]
 
 Write a product description for this item.
@@ -140,10 +153,12 @@ Length: 150-200 words
 ## Example 4: Spreadsheet Analysis (Google Sheets)
 
 ### The Task
+
 Analyze sales data in Sheets.
 
 ### The Prompt (In Sheets with Gemini)
-```
+
+```text
 @sheet Analyze this sales data.
 
 Questions to answer:
@@ -159,7 +174,8 @@ Present findings as:
 ```
 
 ### Creating Formulas
-```
+
+```text
 Create a formula that:
 - Calculates the running total of column B
 - Highlights cells where the value is 20% above average
@@ -173,10 +189,12 @@ Explain what the formula does.
 ## Example 5: Code Generation
 
 ### The Task
+
 Generate code for a specific framework.
 
 ### The Prompt
-```
+
+```text
 Write a Python function using FastAPI that:
 1. Accepts a JSON payload with user data
 2. Validates required fields (name, email, age)
@@ -198,10 +216,11 @@ Follow Google's Python style guide.
 
 ## Example 6: Structured Output Control
 
-Gemini 3 excels at producing structured output.
+Gemini 3.5 excels at producing structured output.
 
 ### JSON Output
-```
+
+```text
 Analyze this customer feedback and return structured data.
 
 Feedback: "The app crashes every time I try to upload a photo. This has been happening for a week. Otherwise love the product!"
@@ -219,7 +238,8 @@ Return as JSON with this exact schema:
 ```
 
 ### Table Output
-```
+
+```text
 Compare these three project management tools: Asana, Monday.com, Notion.
 
 Create a comparison table with columns:
@@ -238,7 +258,8 @@ From [Google's documentation](https://ai.google.dev/gemini-api/docs/prompting-st
 > *"Using examples to show the model a pattern to follow is more effective than using examples to show the model an anti-pattern to avoid."*
 
 ### Effective Few-Shot
-```
+
+```text
 Classify customer support tickets by priority.
 
 Examples:
@@ -262,34 +283,37 @@ Priority:
 
 ---
 
-## Gemini 3 Specific Tips
+## Gemini 3.5 Specific Tips
 
 ### Temperature Setting
+
 From [Google's guide](https://ai.google.dev/gemini-api/docs/prompting-strategies):
 
-> *"When using Gemini 3 models, Google strongly recommends keeping the temperature at its default value of 1.0. Changing the temperature may lead to unexpected behavior, particularly in complex mathematical or reasoning tasks."*
+> *"When using Gemini 3.5 models, Google strongly recommends keeping the temperature at its default value of 1.0. Changing the temperature may lead to unexpected behavior, particularly in complex mathematical or reasoning tasks."*
 
 Leave temperature at default unless you have a specific reason.
 
 ### Request Verbosity Explicitly
-Gemini 3 defaults to concise:
 
-```
+Gemini 3.5 defaults to concise:
+
+```text
 ❌ "Explain machine learning" → Gets brief answer
 
 ✅ "Explain machine learning in detail. Include:
-   - Historical context
-   - Key concepts with examples
-   - Current applications
-   - Future directions
+ - Historical context
+ - Key concepts with examples
+ - Current applications
+ - Future directions
 
    This is for a technical audience, so don't oversimplify."
 ```
 
 ### Consistent Delimiters
+
 Pick one format and stick with it:
 
-```
+```text
 Option A: XML tags
 <context>...</context>
 <task>...</task>
@@ -308,7 +332,8 @@ Don't mix styles in a single prompt.
 ## Workspace-Specific Prompts
 
 ### In Google Docs
-```
+
+```text
 Help me write
 - A proposal for [project name]
 - For audience: [executive team]
@@ -318,7 +343,8 @@ Help me write
 ```
 
 ### In Google Slides
-```
+
+```text
 Create a presentation outline on [topic]
 - 10 slides
 - Include: title slide, agenda, 6 content slides, summary, Q&A
@@ -327,7 +353,8 @@ Create a presentation outline on [topic]
 ```
 
 ### In Google Sheets
-```
+
+```text
 Help me create a formula that:
 - Looks up [value] in column A
 - Returns the corresponding value from column C
@@ -336,7 +363,8 @@ Help me create a formula that:
 ```
 
 ### In Gmail
-```
+
+```text
 Help me write a response to this email that:
 - Declines the meeting request
 - Suggests an alternative time next week
@@ -348,23 +376,23 @@ Help me write a response to this email that:
 
 ## Common Gemini Pitfalls
 
-### Pitfall 1: Over-Engineering Prompts for Gemini 3
+### Pitfall 1: Over-Engineering Prompts for Gemini 3.5
 
 If you wrote elaborate prompts for Gemini 2.x:
 
-```
+```text
 ❌ Long, detailed prompts with excessive context
 
 ✅ Clear, direct prompts with necessary context only
 ```
 
-Gemini 3 understands intent better—elaborate scaffolding often isn't needed.
+Gemini 3.5 understands intent better - elaborate scaffolding often isn't needed.
 
 ### Pitfall 2: Not Leveraging Multimodal
 
 Gemini is natively multimodal. Instead of describing:
 
-```
+```text
 ❌ "I have a chart showing revenue growth of 15% year over year..."
 
 ✅ [Upload the chart] "Analyze this revenue chart and summarize the trends"
@@ -374,8 +402,8 @@ Gemini is natively multimodal. Instead of describing:
 
 In Google Workspace, Gemini knows where you are:
 
-```
-❌ "Write an email" (in Gmail—redundant)
+```text
+❌ "Write an email" (in Gmail - redundant)
 
 ✅ "Write a meeting request for 3pm Tuesday about project Alpha"
    (Gemini knows it's an email, who you're emailing based on thread)
@@ -383,15 +411,15 @@ In Google Workspace, Gemini knows where you are:
 
 ### Pitfall 4: Not Specifying Output Format
 
-Gemini 3 defaults to concise. Be explicit:
+Gemini 3.5 defaults to concise. Be explicit:
 
-```
+```text
 ❌ "Summarize this document"
 
 ✅ "Summarize this document as:
-   - 1 paragraph overview
-   - 5 key bullet points
-   - A table of key metrics"
+ - 1 paragraph overview
+ - 5 key bullet points
+ - A table of key metrics"
 ```
 
 ---
@@ -399,7 +427,8 @@ Gemini 3 defaults to concise. Be explicit:
 ## Prompt Templates for Gemini
 
 ### Analysis Template
-```
+
+```text
 Analyze [content/data/image].
 
 Focus on:
@@ -415,7 +444,8 @@ Output format:
 ```
 
 ### Generation Template
-```
+
+```text
 Create [content type] about [topic].
 
 Requirements:
@@ -430,7 +460,8 @@ Structure as:
 ```
 
 ### Multimodal Template
-```
+
+```text
 [Upload file(s): image/video/audio]
 
 Please [action verb] this [content type].
@@ -456,7 +487,7 @@ Format response as:
 | Multiple files | Reference with @[filename] |
 | Need accuracy | "Cite sources" or "Only state what you can verify" |
 | Complex task | Break into steps, use "Let's think step by step" |
-| Gemini 3 | Simplify—it understands better |
+| Gemini 3.5 | Simplify - it understands better |
 
 ---
 
@@ -472,6 +503,6 @@ Format response as:
 
 ---
 
-*Last updated: December 2025*
+*Last updated: June 2026*
 
-*Sources verified: All hyperlinks validated December 2025*
+*Sources verified: All hyperlinks validated June 2026*

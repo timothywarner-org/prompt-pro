@@ -23,7 +23,7 @@ Before prompting any AI tool, draft your analysis below. Consider:
 
 ### Your Draft
 
-```
+```text
 Arguments FOR:
 -
 -
@@ -51,7 +51,7 @@ My confidence level (1-5):
 
 Open ChatGPT, Copilot, or Gemini and run this prompt:
 
-```
+```text
 You are a senior strategy consultant advising a mid-size robotics company.
 
 Company: Contoso Robotics

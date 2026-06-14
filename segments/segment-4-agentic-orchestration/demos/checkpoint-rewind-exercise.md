@@ -19,14 +19,14 @@ You will use Claude Code to attempt the refactor, observe it break something, an
 
 Open Claude Code in your project directory and examine the current state:
 
-```
+```text
 $ claude
 > What is the current structure of this project? List all source files and their line counts.
 ```
 
 Expected output (representative):
 
-```
+```text
 Project structure:
   src/
     routes.js        (1,247 lines)
@@ -42,7 +42,7 @@ Project structure:
 
 Claude Code creates checkpoints automatically before making changes. You can verify this:
 
-```
+```text
 > Show me the current checkpoint status.
 ```
 
@@ -52,7 +52,7 @@ You should see confirmation that checkpoint tracking is active. Every file modif
 
 Now ask Claude Code to perform the large refactor:
 
-```
+```text
 > Refactor src/routes.js into separate route modules:
 > - src/routes/auth.js (authentication endpoints)
 > - src/routes/inventory.js (inventory management endpoints)
@@ -75,13 +75,13 @@ Claude Code will begin making changes across multiple files. Watch the output as
 
 After the refactor completes, run the test suite:
 
-```
+```text
 > Run the test suite and show me the results.
 ```
 
 Expected output (representative):
 
-```
+```text
 FAIL tests/routes.test.js
   - Authentication middleware not applied to inventory routes (FAILED)
   - Database connection pool shared incorrectly across modules (FAILED)
@@ -102,13 +102,13 @@ Press `Esc` twice quickly (`Esc Esc`). Claude Code will show you the available c
 
 **Option B -- The /rewind command:**
 
-```
+```text
 > /rewind
 ```
 
 Claude Code will display a list of recent checkpoints:
 
-```
+```text
 Available checkpoints:
   [1] Before refactoring src/routes.js (3 minutes ago)
   [2] Before editing src/server.js (2 minutes ago)
@@ -123,13 +123,13 @@ Select checkpoint 1 to restore the codebase to its state before any refactoring 
 
 Confirm the codebase is back to its original state:
 
-```
+```text
 > Run the test suite again to confirm everything passes.
 ```
 
 Expected output:
 
-```
+```text
 PASS tests/routes.test.js
 
 Tests: 22 passed, 22 total
@@ -141,7 +141,7 @@ The codebase is exactly where it was before the refactor attempt. No work was lo
 
 Now try the refactor again, but this time ask Claude Code to preserve the middleware chain:
 
-```
+```text
 > Let's try the refactor again, but this time:
 > 1. Keep the middleware registration in server.js (do not move it into route modules)
 > 2. Extract only the route handler functions into separate modules

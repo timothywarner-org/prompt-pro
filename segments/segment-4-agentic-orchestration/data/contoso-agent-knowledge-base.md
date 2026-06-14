@@ -63,7 +63,7 @@ Contoso Robotics is a mid-size robotics manufacturer headquartered in Austin, Te
 
 - Business hours: Monday through Friday, 7:00 AM to 7:00 PM Central Time
 - Response time: Within 4 business hours for critical issues, within 1 business day for standard requests
-- Channels: Phone (512-555-0100), email (support@contosorobotics.com), and the Contoso Support Portal
+- Channels: Phone (512-555-0100), email (<support@contosorobotics.com>), and the Contoso Support Portal
 
 **Premium Support** is available as an add-on ($3,000/unit/year):
 

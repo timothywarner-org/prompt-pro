@@ -76,7 +76,7 @@ Claude Code will spawn three subagents, each working on its own task. You will s
 
 When subagents need to modify the same files, use git worktrees to give each agent its own working directory. This prevents merge conflicts during parallel execution.
 
-#### What Are Git Worktrees?
+#### What Are Git Worktrees
 
 A git worktree lets you check out the same branch (or different branches) into multiple directories simultaneously, all sharing the same `.git` history.
 

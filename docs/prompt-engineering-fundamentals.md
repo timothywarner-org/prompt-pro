@@ -1,5 +1,6 @@
 # Prompt Engineering Fundamentals
-## A Feynman-Style Guide to Talking with AI (December 2025)
+
+## A Feynman-Style Guide to Talking with AI (June 2026)
 
 > **"If you can't explain it simply, you don't understand it well enough."** - Richard Feynman
 
@@ -11,9 +12,9 @@ This guide explains prompt engineering the way Feynman would: simply, with analo
 
 **Prompt engineering is the art of giving clear instructions to AI.**
 
-Think of an LLM like a brilliant intern who has read the entire internet but has never worked at your company. They're smart, eager, and capable—but they need *your* guidance to be useful. The prompt is your job description, context, and task all rolled into one.
+Think of an LLM like a brilliant intern who has read the entire internet but has never worked at your company. They're smart, eager, and capable - but they need *your* guidance to be useful. The prompt is your job description, context, and task all rolled into one.
 
-> *"The best prompt isn't the longest or most complex. It's the one that achieves your goals reliably with the minimum necessary structure."* — [Anthropic](https://claude.com/blog/best-practices-for-prompt-engineering)
+> *"The best prompt isn't the longest or most complex. It's the one that achieves your goals reliably with the minimum necessary structure."* - [Anthropic](https://claude.com/blog/best-practices-for-prompt-engineering)
 
 ---
 
@@ -35,7 +36,7 @@ Every effective prompt has these components. Miss one, and you'll get disappoint
 
 Tell the AI *who* it should be for this task.
 
-```
+```text
 You are a senior Python developer who specializes in clean, readable code.
 ```
 
@@ -57,20 +58,20 @@ Be specific about the action. Vague tasks get vague results.
 
 Tell the AI exactly how to structure its response.
 
-```
+```text
 Respond in this format:
 - Summary: [2 sentences]
 - Key Points: [bullet list, max 5]
 - Recommendation: [1 sentence]
 ```
 
-**Pro tip from [Google](https://ai.google.dev/gemini-api/docs/prompting-strategies):** Use consistent delimiters—XML tags (`<context>...</context>`) or Markdown headers. Pick one style and stick with it.
+**Pro tip from [Google](https://ai.google.dev/gemini-api/docs/prompting-strategies):** Use consistent delimiters - XML tags (`<context>...</context>`) or Markdown headers. Pick one style and stick with it.
 
 ### 4. Constraints (What Are the Boundaries?)
 
 Set limits to focus the response.
 
-```
+```text
 - Maximum 100 words
 - Use simple language a 10-year-old would understand
 - Don't include technical jargon
@@ -85,7 +86,7 @@ Set limits to focus the response.
 
 The simplest approach. Give instructions without examples.
 
-```
+```text
 Translate the following English text to French: "Hello, how are you?"
 ```
 
@@ -95,7 +96,7 @@ Translate the following English text to French: "Hello, how are you?"
 
 Provide one example of what you want.
 
-```
+```text
 Convert the company name to its stock ticker.
 
 Example:
@@ -112,7 +113,7 @@ Ticker:
 
 Provide 3-5 examples to establish a pattern.
 
-```
+```text
 Classify the sentiment of these reviews:
 
 Review: "Absolutely loved it!" → Positive
@@ -122,25 +123,27 @@ Review: "It's okay, nothing special." → Neutral
 Review: "Would definitely buy again!" →
 ```
 
-**When to use:** Complex or domain-specific tasks. The model learns the pattern from your examples. [Research suggests](https://www.promptingguide.ai/techniques/fewshot) 3-5 examples is the sweet spot—more can cause overfitting.
+**When to use:** Complex or domain-specific tasks. The model learns the pattern from your examples. [Research suggests](https://www.promptingguide.ai/techniques/fewshot) 3-5 examples is the sweet spot - more can cause overfitting.
 
 ### Chain-of-Thought (CoT): Make It Think
 
 Add "Let's think step by step" or provide examples with reasoning steps.
 
 **Zero-shot CoT:**
-```
+
+```text
 How many r's are in "strawberry"? Let's think step by step.
 ```
 
 **Few-shot CoT:**
-```
+
+```text
 Q: If I have 3 apples and give away 1, then buy 4 more, how many do I have?
 A: Let's solve this step by step:
-   - Start with 3 apples
-   - Give away 1: 3 - 1 = 2 apples
-   - Buy 4 more: 2 + 4 = 6 apples
-   - Final answer: 6 apples
+ - Start with 3 apples
+ - Give away 1: 3 - 1 = 2 apples
+ - Buy 4 more: 2 + 4 = 6 apples
+ - Final answer: 6 apples
 
 Q: If I have 10 dollars, spend 3, and earn 7 more, how much do I have?
 A:
@@ -164,17 +167,19 @@ Most LLM interfaces have two types of prompts:
 | Set once, reused | Changes each interaction |
 
 **Example System Prompt:**
-```
+
+```text
 You are a helpful coding assistant. You write clean, well-commented Python code.
 You always explain your code after writing it. You never use deprecated functions.
 ```
 
 **Example User Prompt:**
-```
+
+```text
 Write a function that checks if a number is prime.
 ```
 
-**Best practice from [PromptLayer](https://blog.promptlayer.com/system-prompt-vs-user-prompt-a-comprehensive-guide-for-ai-prompts/):** Put static instructions in the system prompt, dynamic content in the user prompt. When unsure, prefer the user prompt—it's more portable across models.
+**Best practice from [PromptLayer](https://blog.promptlayer.com/system-prompt-vs-user-prompt-a-comprehensive-guide-for-ai-prompts/):** Put static instructions in the system prompt, dynamic content in the user prompt. When unsure, prefer the user prompt - it's more portable across models.
 
 **Model-specific note:** Claude places more emphasis on user messages than system prompts ([Nebuly](https://www.nebuly.com/blog/llm-system-prompt-vs-user-prompt)).
 
@@ -183,25 +188,29 @@ Write a function that checks if a number is prime.
 ## Common Mistakes (And Fixes)
 
 ### Mistake 1: Being Too Vague
-```
+
+```text
 ❌ "Help me write an email"
 ✅ "Write a professional 3-paragraph email declining a meeting invitation.
     Tone: polite but firm. Suggest rescheduling for next week."
 ```
 
 ### Mistake 2: Overloading with Instructions
-```
+
+```text
 ❌ [500 words of instructions for a simple task]
 ✅ Break into multiple prompts, or use a clear structure with headers
 ```
 
 ### Mistake 3: Not Iterating
+
 The first prompt rarely gives perfect results. Refine based on output.
 
-> *"Prompt engineering is inherently iterative. Start with an initial prompt, review the response, and refine."* — [OpenAI](https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt)
+> *"Prompt engineering is inherently iterative. Start with an initial prompt, review the response, and refine."* - [OpenAI](https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt)
 
 ### Mistake 4: Fighting the Model's Defaults
-If you want verbose output from a model trained to be concise, say so explicitly. Modern models like [Gemini 3](https://promptbuilder.cc/blog/gemini-3-prompting-playbook-november-2025) provide direct answers by default—request detail if you need it.
+
+If you want verbose output from a model trained to be concise, say so explicitly. Modern models like recent Gemini models provide direct answers by default - request detail if you need it.
 
 ---
 
@@ -219,7 +228,7 @@ If you want verbose output from a model trained to be concise, say so explicitly
 
 ## Quick Reference: Prompt Template
 
-```
+```text
 [ROLE]
 You are a [specific expertise] who [key characteristic].
 
@@ -247,7 +256,7 @@ Respond using:
 | Resource | Best For |
 |----------|----------|
 | [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering) | Official techniques, API users |
-| [Anthropic Prompt Engineering](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) | Claude-specific, safety-focused |
+| [Anthropic Prompt Engineering](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview) | Claude-specific, safety-focused |
 | [Prompt Engineering Guide](https://www.promptingguide.ai/) | Comprehensive reference, all models |
 | [OpenAI Academy - Prompting](https://academy.openai.com/public/clubs/work-users-ynjqu/resources/prompting) | Beginners, ChatGPT users |
 | [Lakera's 2025 Guide](https://www.lakera.ai/blog/prompt-engineering-guide) | Security considerations |
@@ -256,14 +265,14 @@ Respond using:
 
 ## Key Takeaways
 
-1. **Clarity beats cleverness** — Simple, specific prompts outperform elaborate ones
-2. **Show, don't just tell** — Examples (few-shot) are powerful teachers
-3. **Structure matters** — Use consistent formatting and clear sections
-4. **Iterate always** — Your first prompt is your first draft, not your final product
-5. **Know your model** — Different LLMs respond differently to the same prompt
+1. **Clarity beats cleverness** - Simple, specific prompts outperform elaborate ones
+2. **Show, don't just tell** - Examples (few-shot) are powerful teachers
+3. **Structure matters** - Use consistent formatting and clear sections
+4. **Iterate always** - Your first prompt is your first draft, not your final product
+5. **Know your model** - Different LLMs respond differently to the same prompt
 
 ---
 
-*Last updated: December 2025*
+*Last updated: June 2026*
 
-*Sources verified: All hyperlinks validated December 2025*
+*Sources verified: All hyperlinks validated June 2026*

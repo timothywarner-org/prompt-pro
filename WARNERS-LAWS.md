@@ -22,13 +22,13 @@ Understand which account, organization, and data boundaries you're operating wit
 
 ## Mindset & Cognition
 
-### Law #3: Beware the anchor trap — draft before you prompt
+### Law #3: Beware the anchor trap - draft before you prompt
 
 **Principle**: Preserve independent judgment.
 
-Write your own answer sketch before you prompt. Once the AI sets the frame, your edits orbit its version, not yours. The first AI output becomes a psychological anchor you can't unsee — drafting first keeps your thinking genuinely independent.
+Write your own answer sketch before you prompt. Once the AI sets the frame, your edits orbit its version, not yours. The first AI output becomes a psychological anchor you can't unsee - drafting first keeps your thinking genuinely independent.
 
-### Law #4: Trust your gut — never hesitate to second-guess the AI
+### Law #4: Trust your gut - never hesitate to second-guess the AI
 
 **Principle**: Human intuition is a feature, not a bug.
 
@@ -36,7 +36,7 @@ If something the AI produces feels off, it probably is. Your domain expertise an
 
 ### Law #5: Every AI chat has its own lifecycle
 
-**Principle**: Develop "prompt smell" — know when to start fresh.
+**Principle**: Develop "prompt smell" - know when to start fresh.
 
 Recognize when conversation context becomes polluted, contradictory, or unfocused. Start a new thread rather than fighting accumulated confusion.
 
@@ -78,7 +78,7 @@ Frame requests with specific roles and responsibilities. "Act as a senior DevOps
 
 Decompose large problems into smaller, sequential steps. AI works best with focused, well-scoped requests rather than overwhelming complexity.
 
-### Law #11: Show, don't tell — lead with examples
+### Law #11: Show, don't tell - lead with examples
 
 **Principle**: Few-shot prompting outperforms instructions alone.
 
@@ -90,7 +90,7 @@ Providing two to five concrete examples of the output you want consistently beat
 
 For any multi-step or analytical task, explicitly instruct the model to reason step by step before giving a final answer. Asking it to think aloud dramatically reduces confident-sounding errors on anything comparative, numerical, or logical.
 
-### Law #13: Think meta — prompt about prompting
+### Law #13: Think meta - prompt about prompting
 
 **Principle**: Use the AI to improve your own prompts.
 
@@ -104,7 +104,7 @@ Ask the AI how to improve your prompts. Request feedback on your question struct
 
 **Principle**: Capture ideas when they emerge.
 
-Document insights, prompts, and patterns immediately. Context and momentum are perishable — record them while fresh.
+Document insights, prompts, and patterns immediately. Context and momentum are perishable - record them while fresh.
 
 ### Law #15: If you need to remind the AI, add it to custom instructions
 
@@ -118,11 +118,11 @@ Persistent preferences and constraints belong in custom instructions, not repeat
 
 Review and update your instructions as your needs evolve. Remove outdated guidance, add new patterns, and consolidate redundancies.
 
-### Law #17: Treat prompts as assets — version-control them
+### Law #17: Treat prompts as assets - version-control them
 
 **Principle**: Prompt drift is a regression risk.
 
-The difference between a good prompt and a great prompt is usually a dozen small edits. Name your prompts, date them, note what changed. High-value prompts are organizational IP — version-control them and test them against model updates the same way you'd test software after a dependency upgrade.
+The difference between a good prompt and a great prompt is usually a dozen small edits. Name your prompts, date them, note what changed. High-value prompts are organizational IP - version-control them and test them against model updates the same way you'd test software after a dependency upgrade.
 
 ---
 
@@ -170,13 +170,13 @@ Never paste personal, confidential, or customer data into public or free-tier AI
 
 **Principle**: Platform-specific approaches.
 
-Different models excel at different tasks. Claude handles nuance well, GPT-4 has broad knowledge, DeepSeek is cost-effective for coding. Match the tool to the task.
+Different models excel at different tasks. Claude handles nuance well, GPT-5.x has broad knowledge, DeepSeek is cost-effective for coding. Match the tool to the task.
 
 ### Law #24: Orchestrate subagents as force multipliers
 
 **Principle**: Delegate, parallelize, and conquer.
 
-If your environment supports subagents, use them. Spin up specialized agents for security review, code analysis, testing, and documentation in parallel rather than working through tasks sequentially. Use git worktrees for multi-level parallelism so agents operate on isolated copies without blocking each other. The best prompt engineers don't just talk to one AI — they conduct an orchestra.
+If your environment supports subagents, use them. Spin up specialized agents for security review, code analysis, testing, and documentation in parallel rather than working through tasks sequentially. Use git worktrees for multi-level parallelism so agents operate on isolated copies without blocking each other. The best prompt engineers don't just talk to one AI - they conduct an orchestra.
 
 ### Law #25: Checkpoint before consequence
 
@@ -218,4 +218,4 @@ _These laws are derived from practical experience teaching thousands of professi
 
 **Author**: Tim Warner
 **Version**: 2.0
-**Last Updated**: April 2026
+**Last Updated**: June 2026

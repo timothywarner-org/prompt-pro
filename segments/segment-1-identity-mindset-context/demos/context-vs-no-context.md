@@ -13,7 +13,7 @@ Run both versions of the prompt below in the same AI tool. Compare the outputs t
 
 ## Version A: Bare Prompt (No Context)
 
-```
+```text
 Write a market analysis for our new product line.
 ```
 
@@ -34,7 +34,7 @@ The AI has almost nothing to work with. It will likely:
 
 ## Version B: Context-Rich Prompt
 
-```
+```text
 You are a senior market analyst advising Contoso Robotics on a strategic expansion.
 
 Company context:

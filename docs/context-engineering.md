@@ -4,7 +4,7 @@
 
 ## 🎯 Overview
 
-This document curates **verified, current guidance** for crafting effective prompts for Large Language Models (LLMs). Whether you're an end-user crafting prompts for daily tasks or a developer architect building AI-powered solutions, these resources represent the **state-of-the-art** in prompt engineering as of 2024.
+This document curates **verified, current guidance** for crafting effective prompts for Large Language Models (LLMs). Whether you're an end-user crafting prompts for daily tasks or a developer architect building AI-powered solutions, these resources represent the **state-of-the-art** in prompt engineering as of 2026.
 
 ---
 
@@ -13,7 +13,7 @@ This document curates **verified, current guidance** for crafting effective prom
 ### **Core Principles & Fundamentals**
 
 - **[OpenAI's Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)** - The official, comprehensive guide from OpenAI covering basic to advanced techniques
-- **[Anthropic's Prompt Engineering Guide](https://docs.anthropic.com/claude/docs/prompt-engineering)** - Claude's official documentation with safety-focused approaches
+- **[Anthropic's Prompt Engineering Guide](https://docs.claude.com/claude/docs/prompt-engineering)** - Claude's official documentation with safety-focused approaches
 - **[Microsoft's Prompt Engineering Best Practices](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering)** - Enterprise-focused guidance for Azure OpenAI Service
 
 ### **Advanced Techniques**
@@ -91,7 +91,7 @@ This document curates **verified, current guidance** for crafting effective prom
 
 - **[Microsoft's AI Learning Path](https://learn.microsoft.com/en-us/training/paths/ai-fundamentals/)** - Comprehensive AI fundamentals
 - **[OpenAI's API Documentation](https://platform.openai.com/docs)** - Complete API reference with examples
-- **[Anthropic's Claude Documentation](https://docs.anthropic.com/)** - Claude-specific guidance
+- **[Anthropic's Claude Documentation](https://docs.claude.com/)** - Claude-specific guidance
 
 ### **Structured Learning**
 
@@ -146,12 +146,14 @@ This document curates **verified, current guidance** for crafting effective prom
 ## 🎯 Tim's Pro Tips
 
 ### **For End Users:**
+
 - **Start simple** - Complex prompts often fail more than simple ones
 - **Test iteratively** - Small changes can have big impacts
 - **Use examples** - Few-shot prompting is incredibly powerful
 - **Be specific** - Vague prompts get vague results
 
 ### **For Developers:**
+
 - **Design for failure** - LLMs are probabilistic, not deterministic
 - **Implement retry logic** - Network issues and rate limits happen
 - **Use structured outputs** - Function calling is your friend
@@ -161,7 +163,7 @@ This document curates **verified, current guidance** for crafting effective prom
 
 ## 📝 Last Updated
 
-**December 2024** - This document is maintained to reflect the current state of prompt engineering best practices. Links are verified and tested regularly.
+**June 2026** - This document is maintained to reflect the current state of prompt engineering best practices. Links are verified and tested regularly.
 
 ---
 

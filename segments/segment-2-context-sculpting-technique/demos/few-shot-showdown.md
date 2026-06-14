@@ -2,7 +2,7 @@
 
 **Law 11 -- Few-Shot Examples:** Show the model what "good" looks like before asking it to produce.
 
-**Tool:** ChatGPT (GPT-4o or later) | **Time:** 10 minutes
+**Tool:** ChatGPT (GPT-5.x or any current model) | **Time:** 10 minutes
 
 ---
 

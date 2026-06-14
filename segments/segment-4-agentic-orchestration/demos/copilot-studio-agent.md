@@ -25,19 +25,19 @@ A customer support agent for Contoso Robotics that can:
 ## Step 1: Create the Agent
 
 1. Navigate to [https://copilotstudio.microsoft.com](https://copilotstudio.microsoft.com).
-2. Select **Create** from the left navigation, then **New agent**.
-3. Fill in the agent details:
+2. On the **Home** page, in the describe-your-agent box, enter a description of what the agent should do. Copilot Studio provisions the agent and opens its **Overview** page.
+3. On the **Overview** page, refine the AI-generated details:
    - **Name:** Contoso Robotics Support Assistant
    - **Description:** Helps customers with product information, troubleshooting, and support requests for Contoso Robotics warehouse automation products.
    - **Instructions:** You are a friendly and knowledgeable customer support agent for Contoso Robotics. You help customers with product information about WarehouseBot Pro, WarehouseBot Lite, and LogiMover 500. You answer questions about pricing, specifications, warranty, and support policies. If you cannot answer a question, escalate to a human agent. Always be professional and concise.
-4. Select **Create**.
+4. Save your changes. (To skip the natural-language flow and fill in a form directly, use the manual "skip to configure" option on the Home page instead.)
 
 ## Step 2: Add the Knowledge Source
 
-1. In the agent editor, select **Knowledge** from the top navigation.
+1. In the agent editor, open the **Knowledge** page.
 2. Select **Add knowledge**.
-3. Choose **Files** as the source type.
-4. Upload the file `../data/contoso-agent-knowledge-base.md` (or copy its contents into a document that you upload).
+3. Choose **File upload** as the source type.
+4. Upload the file `../data/contoso-agent-knowledge-base.md` (or copy its contents into a document that you upload), then provide a name and description.
 5. Select **Add** to confirm.
 
 The agent will now use this document to ground its responses. When a customer asks about pricing, warranty terms, or product specs, the agent retrieves relevant passages from this knowledge base rather than generating answers from its training data alone.
@@ -48,7 +48,7 @@ Create three custom topics to handle the most common customer interactions.
 
 ### Topic 1: Product Information
 
-1. Select **Topics** from the top navigation, then **Add a topic** and choose **From blank**.
+1. Open the **Topics** page, select **Add a topic**, and choose **From blank**.
 2. Name the topic: **Product Information**
 3. Add these trigger phrases:
    - "Tell me about your products"
@@ -57,7 +57,7 @@ Create three custom topics to handle the most common customer interactions.
    - "How much does LogiMover cost"
    - "Compare your robot models"
 4. Add a **Message** node with the text: "I can help you with information about our product line. Let me look that up for you."
-5. Add a **Generative answers** node configured to search the uploaded knowledge base.
+5. Add a **Create generative answers** node configured to search the uploaded knowledge base.
 6. Save the topic.
 
 ### Topic 2: Troubleshooting
@@ -75,31 +75,28 @@ Create three custom topics to handle the most common customer interactions.
    - WarehouseBot Lite
    - LogiMover 500
 5. Add a **Question** node asking: "Please describe the issue you are experiencing."
-6. Add a **Generative answers** node to search the knowledge base for troubleshooting guidance.
+6. Add a **Create generative answers** node to search the knowledge base for troubleshooting guidance.
 7. Add a **Message** node: "If this does not resolve your issue, I can connect you with a support specialist."
 8. Save the topic.
 
 ### Topic 3: Escalation to Human Agent
 
-1. Add another topic from blank.
-2. Name the topic: **Escalate to Support**
-3. Add these trigger phrases:
-   - "Talk to a human"
-   - "I need to speak with someone"
-   - "Transfer me to support"
-   - "This is not helping"
-   - "Escalate my issue"
-4. Add a **Message** node: "I understand you would like to speak with a support specialist. Let me transfer you now."
-5. Add a **Transfer to agent** node (or a **Redirect** node to your organization's live agent system).
-6. Save the topic.
+Escalation is handled through the built-in **Escalate** system topic rather than a custom topic.
 
-## Step 4: Configure Conversation Starters
+1. On the **Topics** page, open the **System** tab and select the **Escalate** topic.
+2. Add a **Message** node: "I understand you would like to speak with a support specialist. Let me transfer you now."
+3. Add a transfer node via **Add node > Topic management > Transfer conversation**, then choose the **Transfer to agent** option (or **External phone number transfer**) for your organization's live agent system. If you have no live-agent hub, use **Go to another topic** with a support message and URL instead.
+4. Save the topic.
 
-1. Return to the agent **Settings** page.
-2. Under **Conversation starters**, add these suggestions that appear when a user first opens the chat:
+## Step 4: Configure Suggested Prompts
+
+1. Return to the agent **Overview** page.
+2. In the **Suggested prompts** section, select **Add suggested prompts** and add these:
    - "Tell me about WarehouseBot Pro"
    - "I need help troubleshooting my robot"
    - "What is your warranty policy?"
+
+Note: suggested prompts appear on the agent's welcome surface in Teams and Microsoft 365 Copilot. They do not show in the Copilot Studio test panel, so you will not see them while testing in Step 5.
 
 ## Step 5: Test the Agent
 
@@ -129,9 +126,9 @@ For this course exercise, testing in the built-in panel is sufficient.
 This agent was built using the Copilot Studio interface as it exists in early 2026. Here is what may change:
 
 - **Menu paths** may be renamed or reorganized in future updates
-- **Generative answers** configuration options may expand
+- **Create generative answers** configuration options may expand
 - **New channel options** (WhatsApp, Slack) may become available
-- **Model selection** (GPT-4.1, GPT-5, etc.) will change as new models ship
+- **Model selection** (the GPT models offered) will change as new models ship
 - **MCP integration** may replace or supplement some knowledge source patterns
 
 The design principles stay constant: define clear triggers, ground responses in authoritative knowledge, test with representative utterances, and provide an escalation path. When the UI changes, apply these principles to the new interface.

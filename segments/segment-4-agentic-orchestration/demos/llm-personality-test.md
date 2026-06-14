@@ -66,7 +66,7 @@ Use the CSV rubric at `../data/contoso-llm-comparison-rubric.csv`. For each crit
 
 For each model:
 
-```
+```text
 Weighted Score = SUM(criterion_score * weight) / 100
 ```
 

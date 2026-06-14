@@ -16,7 +16,7 @@ The same principle applies across every AI platform. Your identity is not just a
 
 ### Microsoft 365 Copilot
 
-| Factor | Work Account (mchen@contosorobotics.com) | Personal Account (mchen@outlook.com) |
+| Factor | Work Account (<mchen@contosorobotics.com>) | Personal Account (<mchen@outlook.com>) |
 |--------|------------------------------------------|--------------------------------------|
 | Email access | Contoso Robotics Exchange mailbox | Personal Outlook.com inbox |
 | File access | SharePoint, OneDrive for Business, Teams files | Personal OneDrive |
@@ -61,7 +61,7 @@ The same principle applies across every AI platform. Your identity is not just a
 
 ### Google Gemini
 
-| Factor | Google Workspace (mchen@contosorobotics.com) | Personal Google account |
+| Factor | Google Workspace (<mchen@contosorobotics.com>) | Personal Google account |
 |--------|-----------------------------------------------|------------------------|
 | Drive access | Contoso Shared Drives and team files | Personal Google Drive |
 | Gmail context | Contoso business email | Personal Gmail |
