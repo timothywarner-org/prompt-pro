@@ -16,7 +16,7 @@ Contoso Robotics is expanding into the European market. The compliance team need
 
 Send this exact prompt to ChatGPT, Claude, and Gemini in three separate sessions:
 
-```
+```text
 Contoso Robotics manufactures industrial warehouse automation robots
 and is preparing to sell in the European Union for the first time.
 

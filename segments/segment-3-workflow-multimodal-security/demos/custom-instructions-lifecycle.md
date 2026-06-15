@@ -32,7 +32,7 @@ Read through the instructions before pasting. Notice:
 
 Send this prompt to the project:
 
-```
+```text
 Write a one-page product announcement for our new RoboAssist Pro 3000
 warehouse automation robot. Target audience is logistics managers at
 mid-size distribution centers.
@@ -49,7 +49,7 @@ Save the response. Note:
 
 Send this follow-up in the same conversation:
 
-```
+```text
 Now create 3 social media posts promoting the same product for LinkedIn.
 ```
 
@@ -74,7 +74,7 @@ Read through v2 and compare to v1:
 
 Send the identical product announcement prompt:
 
-```
+```text
 Write a one-page product announcement for our new RoboAssist Pro 3000
 warehouse automation robot. Target audience is logistics managers at
 mid-size distribution centers.
@@ -82,7 +82,7 @@ mid-size distribution centers.
 
 Then the same follow-up:
 
-```
+```text
 Now create 3 social media posts promoting the same product for LinkedIn.
 ```
 
