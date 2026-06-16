@@ -5,7 +5,10 @@ yarn-debug.log*
 yarn-error.log*
 
 
-.claude/
+# Share Claude Code agent + skill definitions with learners.
+# Keep machine-local settings and per-agent memory out of the repo.
+.claude/settings.local.json
+.claude/agent-memory/
 tim/
 
 # Environment variables
@@ -79,8 +82,9 @@ jspm_packages/
 # TernJS port file
 .tern-port
 
-# IDE files
-.vscode/
+# IDE files: ignore everything under .vscode except the shared MCP server config.
+.vscode/*
+!.vscode/mcp.json
 .idea/
 *.swp
 *.swo
