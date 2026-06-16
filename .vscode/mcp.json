@@ -1,0 +1,24 @@
+{
+  "servers": {
+    "weather": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "segments/segment-4-agentic-orchestration/mcp-demos/weather-server/server.js"
+      ]
+    },
+    "makenotion/notion-mcp-server": {
+      "type": "http",
+      "url": "https://mcp.notion.com/sse",
+      "gallery": "https://api.mcp.github.com",
+      "version": "1.0.0"
+    },
+    "oreilly/microsoftdocs/mcp": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp",
+      "gallery": "https://api.mcp.github.com",
+      "version": "1.0.0"
+    }
+  },
+  "inputs": []
+}

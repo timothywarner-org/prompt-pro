@@ -1,0 +1,20 @@
+{
+  "name": "prompt-lab",
+  "version": "1.0.0",
+  "description": "Warner's Laws Prompt Lab - a Contoso Robotics themed companion app for the How to Prompt Like a Pro course",
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "helmet": "^8.0.0"
+  },
+  "license": "MIT"
+}
