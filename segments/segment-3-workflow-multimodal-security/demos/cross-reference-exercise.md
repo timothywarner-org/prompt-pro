@@ -33,7 +33,7 @@ AI software. Focus on physical industrial robots and machinery.
 
 ## Source Document for Verification
 
-Use the following verified reference material to check the LLMs' claims. This information is current as of April 2026.
+Use the following verified reference material to check the LLMs' claims. This information is current as of June 2026.
 
 ---
 

@@ -13,7 +13,7 @@ This document curates **verified, current guidance** for crafting effective prom
 ### **Core Principles & Fundamentals**
 
 - **[OpenAI's Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)** - The official, comprehensive guide from OpenAI covering basic to advanced techniques
-- **[Anthropic's Prompt Engineering Guide](https://docs.claude.com/claude/docs/prompt-engineering)** - Claude's official documentation with safety-focused approaches
+- **[Anthropic's Prompt Engineering Guide](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview)** - Claude's official documentation with safety-focused approaches
 - **[Microsoft's Prompt Engineering Best Practices](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering)** - Enterprise-focused guidance for Azure OpenAI Service
 
 ### **Advanced Techniques**

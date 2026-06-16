@@ -4,6 +4,8 @@ about: Report a problem with the course material
 labels: bug
 ---
 
+# Bug report
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
@@ -28,4 +30,5 @@ If applicable, add screenshots to help explain your problem.
 - Version [e.g. 22]
 
 **Additional context**
-Add any other context about the problem here.
+Add any other context about the
+problem here.

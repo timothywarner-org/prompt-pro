@@ -8,7 +8,7 @@
 
 ## Setup
 
-Contoso Robotics is drafting a partner outreach email to hospital systems, inviting them to pilot the new MedMover 100 healthcare logistics robot. You start with a mediocre prompt, ask the model to critique it, apply the improvements, and compare results.
+Contoso Robotics is drafting a partner outreach email to hospital systems, inviting them to pilot the new HealthBot Alpha healthcare logistics robot. You start with a mediocre prompt, ask the model to critique it, apply the improvements, and compare results.
 
 ---
 
@@ -49,7 +49,7 @@ Still in the same session, paste the improved prompt that Gemini suggested. If G
 
 - **Sender:** Maria Chen, CEO of Contoso Robotics
 - **Recipient persona:** VP of Operations at a 400-bed hospital
-- **Product:** MedMover 100 -- autonomous robot for hospital supply room and pharmacy distribution
+- **Product:** HealthBot Alpha -- autonomous robot for hospital supply room and pharmacy distribution
 - **Ask:** Join a 90-day pilot program, free of charge, starting Q3 2026
 - **Proof point:** WarehouseBot Pro reduced fulfillment errors by 62% at a Fortune 500 client
 - **Tone:** Confident but not salesy; peer-to-peer executive voice

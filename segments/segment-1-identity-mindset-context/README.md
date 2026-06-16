@@ -1,6 +1,6 @@
-# Segment 1: Identity, Mindset, and Context
+# Segment 1: Identity, Mindset & Context Foundations
 
-**Duration:** 50 minutes | **Level:** Intermediate | **Last Updated:** April 2026
+**Duration:** 50 minutes | **Level:** Intermediate | **Last Updated:** June 2026
 
 ## Overview
 
@@ -12,7 +12,7 @@ This segment introduces Warner's Laws 1-7 -- the foundational principles that sh
 
 | Law | Title | Core Idea |
 |-----|-------|-----------|
-| 1 | Pilot/Copilot Responsibility | You are the pilot; the AI is your copilot. Final decisions are yours. |
+| 1 | Pilot/Co-pilot Responsibility | You are the pilot; the AI is your co-pilot. Final decisions are yours. |
 | 2 | Identity Awareness | Your signed-in identity determines what data and capabilities the AI can access. |
 | 3 | Anchor Trap | Reading AI output before forming your own opinion biases your judgment. |
 | 4 | Trusting Your Gut | Domain expertise still matters -- use AI to augment, not replace, your instincts. |
@@ -28,6 +28,7 @@ All demos and exercises use a single fictional company:
 
 - **Company:** Contoso Robotics
 - **Headquarters:** Austin, TX
+- **CEO:** Maria Chen
 - **Employees:** 500
 - **Annual Revenue:** $120M
 - **Products:** WarehouseBot Pro, WarehouseBot Lite, LogiMover 500
@@ -80,4 +81,4 @@ See `data/contoso-company-profile.md` for the full company profile learners will
 
 ---
 
-*Next: [Segment 2 - Context Sculpting and Technique](../segment-2-context-sculpting-technique/)*
+*Next: [Segment 2 - Context Sculpting and Technique](../segment-2

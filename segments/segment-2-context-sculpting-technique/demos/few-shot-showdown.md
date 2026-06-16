@@ -17,7 +17,7 @@ Contoso Robotics is preparing a product brief for its first healthcare logistics
 Paste this prompt into ChatGPT with no additional context.
 
 ```text
-Write a product brief for Contoso Robotics' new healthcare logistics robot called MedMover 100.
+Write a product brief for Contoso Robotics' new healthcare logistics robot called HealthBot Alpha.
 ```
 
 Save the output. Note the format, length, tone, and whether it includes a specs table.
@@ -31,7 +31,7 @@ Paste the following prompt, which includes three example product briefs in Conto
 ```text
 You are a senior product marketer at Contoso Robotics. Below are three product briefs
 written in our house style. Study the format, tone, and structure carefully, then write
-a new brief for our upcoming healthcare logistics robot, MedMover 100.
+a new brief for our upcoming healthcare logistics robot, HealthBot Alpha.
 
 ---
 
@@ -91,15 +91,15 @@ Pricing tier: Mid-market ($42,000-$55,000 per unit).
 
 EXAMPLE 3: LogiMover 500
 
-Tagline: "Pallets handled. People freed."
+Tagline: "Last mile handled. People freed."
 
-LogiMover 500 is a heavy-duty autonomous pallet mover built for cross-dock and
-staging environments. It handles full Euro-pallets and coordinates multi-robot
+LogiMover 500 is a compact autonomous robot built for last-mile sortation and
+internal transport. It threads busy pick-and-pack zones and coordinates multi-robot
 choreography through Contoso's Fleet Director software.
 
 | Spec | Value |
 |------|-------|
-| Payload capacity | 1,200 kg |
+| Payload capacity | 100 kg |
 | Top speed | 1.2 m/s |
 | Battery life | 10 hours continuous |
 | Navigation | LiDAR + UWB beacons |
@@ -107,16 +107,16 @@ choreography through Contoso's Fleet Director software.
 | Safety rating | ISO 3691-4 compliant |
 
 Target market: Cross-dock facilities, cold-chain distribution centers, and
-automotive parts staging areas.
+e-commerce sortation hubs.
 
 Competitive advantage: Multi-robot choreography eliminates traffic jams in
 narrow-aisle environments -- up to 30% higher throughput vs. single-robot systems.
 
-Pricing tier: Enterprise ($120,000-$145,000 per unit).
+Pricing tier: Compact ($28,000 per unit).
 
 ---
 
-Now write the product brief for MedMover 100, our first healthcare logistics robot.
+Now write the product brief for HealthBot Alpha, our first healthcare logistics robot.
 It is designed for hospital supply rooms and pharmacy distribution. Use the same
 format as the three examples above.
 ```

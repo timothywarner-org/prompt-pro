@@ -1,3 +1,5 @@
+# Pull request
+
 ## Summary
 
 - Lesson / segment touched:
@@ -6,8 +8,9 @@
 
 ## Testing
 
-- [ ] `npm test`
-- [ ] `node src/index.js`
+- [ ] `npx markdownlint-cli2` passes (Markdown lint)
+- [ ] Relative links resolve and demos reference existing data files
+- [ ] MCP weather server smoke-tested (`npm start` in `segments/segment-4-agentic-orchestration/mcp-demos/weather-server/`) if touched
 - [ ] Other (list):
 
 ## Teaching Impact

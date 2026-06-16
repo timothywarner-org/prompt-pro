@@ -1,8 +1,8 @@
-# Segment 4: Agentic Orchestration
+# Segment 4: Agentic Orchestration & Resilience
 
 **Duration:** 50 minutes
 **Level:** Advanced
-**Last Updated:** April 2026
+**Last Updated:** June 2026
 
 ## Warner's Laws Covered
 

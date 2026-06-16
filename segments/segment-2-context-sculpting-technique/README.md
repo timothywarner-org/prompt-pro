@@ -1,6 +1,6 @@
-# Segment 2: Context Sculpting Technique
+# Segment 2: Context Sculpting & Prompting Technique
 
-**Duration:** 50 minutes | **Level:** Intermediate | **Last Updated:** April 2026
+**Duration:** 50 minutes | **Level:** Intermediate | **Last Updated:** June 2026
 
 ## What You Will Learn
 
@@ -23,7 +23,7 @@ This segment covers Warner's Laws 8-14 -- the craft of shaping context so that a
 All demos use a single fictional company so learners can focus on technique, not backstory.
 
 - **Company:** Contoso Robotics
-- **Size:** 500 employees, $120 M annual revenue
+- **Size:** 500 employees, $120M annual revenue
 - **HQ:** Austin, TX
 - **CEO:** Maria Chen
 - **Products:** WarehouseBot Pro, WarehouseBot Lite, LogiMover 500
@@ -58,4 +58,4 @@ All demos use a single fictional company so learners can focus on technique, not
 3. Then run **Version B** (or C) and compare.
 4. Discuss what changed and why, referencing the relevant law.
 
-Data files in `data/` can be pasted directly into a chat window or uploaded as attachments depending on the tool.
+Data files in `data/` can be pasted directly into a chat window or uploaded as attachments depending on t

@@ -2,7 +2,7 @@
 
 ## Company Overview
 
-Contoso Robotics is a mid-size robotics manufacturer headquartered in Austin, Texas. Founded in 2014, the company employs approximately 500 people and generates $120M in annual revenue. CEO Maria Chen leads the organization with a focus on warehouse and logistics automation. Contoso serves over 200 enterprise customers across North America, including major third-party logistics providers, e-commerce fulfillment centers, and manufacturing distribution hubs.
+Contoso Robotics is a mid-size robotics manufacturer headquartered in Austin, Texas. Founded in 2018, the company employs 500 people and generates $120M in annual revenue. CEO Maria Chen leads the organization with a focus on warehouse and logistics automation. Contoso serves over 200 enterprise customers across North America, including major third-party logistics providers, e-commerce fulfillment centers, and manufacturing distribution hubs.
 
 ## Product Line
 
@@ -12,7 +12,7 @@ Contoso Robotics is a mid-size robotics manufacturer headquartered in Austin, Te
 
 **Specifications:**
 
-- Payload capacity: 1,500 lbs
+- Payload capacity: up to 500 kg
 - Navigation: LiDAR + vision fusion, dynamic obstacle avoidance
 - Battery: 48V lithium-ion, 12-hour continuous runtime, 90-minute fast charge
 - Speed: Up to 6.5 ft/s loaded
@@ -29,7 +29,7 @@ Contoso Robotics is a mid-size robotics manufacturer headquartered in Austin, Te
 
 **Specifications:**
 
-- Payload capacity: 600 lbs
+- Payload capacity: up to 200 kg
 - Navigation: LiDAR with 2D mapping
 - Battery: 24V lithium-ion, 8-hour continuous runtime, 2-hour standard charge
 - Speed: Up to 4.5 ft/s loaded
@@ -42,20 +42,20 @@ Contoso Robotics is a mid-size robotics manufacturer headquartered in Austin, Te
 
 ### LogiMover 500
 
-**Category:** Autonomous tugger for inter-facility material transport
+**Category:** Compact autonomous robot for last-mile and sortation tasks
 
 **Specifications:**
 
-- Towing capacity: 5,000 lbs (up to 10 carts in a train)
-- Navigation: GPS + indoor LiDAR hybrid for indoor/outdoor transitions
-- Battery: 72V lithium-ion, 16-hour runtime, supports opportunity charging
-- Speed: Up to 8 ft/s unloaded, 5 ft/s loaded
-- Integration: Fleet management dashboard, REST API, Modbus for conveyor integration
-- Dimensions: 60 x 30 x 24 inches
+- Payload capacity: up to 50 kg per trip
+- Navigation: vision + indoor LiDAR for tight-aisle and dock-area movement
+- Battery: 24V lithium-ion, 10-hour runtime, supports opportunity charging
+- Speed: Up to 5 ft/s loaded
+- Integration: Fleet management dashboard, REST API, conveyor handoff support
+- Dimensions: 30 x 20 x 14 inches
 
-**Pricing:** Starting at $125,000 per unit. Custom configurations available. Annual maintenance contract: $12,500 per unit.
+**Pricing:** Starting at $28,000 per unit. Custom configurations available. Annual maintenance contract: $2,800 per unit.
 
-**Ideal for:** Campus-style facilities, manufacturing plants, and airport logistics requiring material movement between buildings.
+**Ideal for:** Last-mile movement and sortation within fulfillment centers, moving items between picking zones, packing stations, and outbound docks.
 
 ## Support Policies
 

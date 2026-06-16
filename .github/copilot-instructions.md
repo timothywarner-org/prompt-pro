@@ -1,43 +1,50 @@
-# prompt-pro AI Guidance
+# prompt-pro AI guidance
 
-## Purpose & Scope
+## Purpose and scope
 
-- Main deliverable is the Node demo in [src/index.js](src/index.js) showcasing prompt templates via PromptManager and AIClient
-- Supporting course material lives under [segments](segments), [resources](resources), and [attachments](attachments); keep edits non-destructive
-- Duplicate demo lives in [prompt-template-demo](prompt-template-demo) for standalone use; mirror patterns when adding features
+- This is a **content-first** repository. It backs Tim Warner's O'Reilly Live Learning course **How to Prompt Like a Pro** (4 x 50-minute segments).
+- The course teaches **Warner's 26 Laws of Generative AI**, split **7-7-8-4** across the four segments (see [../WARNERS-LAWS.md](../WARNERS-LAWS.md)).
+- All demo content uses the fictional **Contoso Robotics** scenario (mid-size robotics manufacturer, 500 employees, $120M revenue, Austin TX, CEO Maria Chen). Keep new demo material consistent with this fiction.
+- There is **no top-level application**. The root `package.json` is a legacy stub - do not run its `start`/`dev`/`test` scripts.
 
-## Core Node App
+## Repository layout
 
-- Uses ES modules throughout; export classes/functions explicitly and import with file extensions
-- Prompt orchestration flows: validate config → construct prompts → call OpenAI; follow existing call chain before adding new entrypoints
-- Templates are plain text files in [templates](templates); keep naming kebab-case without extensions when referencing in code
+- `segments/segment-1-identity-mindset-context/` - Laws 1-7, Contoso scenario data and demos.
+- `segments/segment-2-context-sculpting-technique/` - Laws 8-14, few-shot, chain-of-thought, role-play.
+- `segments/segment-3-workflow-multimodal-security/` - Laws 15-22, custom instructions, prompt versioning, privacy audits (includes a vendored `knowledge/` subfolder of Microsoft Learn content - do not edit it).
+- `segments/segment-4-agentic-orchestration/` - Laws 23-26, LLM matching, subagents, checkpoints.
+- `docs/` - Long-form reference guides and the master slide deck.
+- `images/` - Cover art and social preview (optimized PNG/JPG).
 
-## Runtime Configuration
+Drop new material into the matching segment folder rather than introducing parallel directories.
 
-- Env vars loaded via dotenv in [src/config.js](src/config.js); copy env.example to .env and set OPENAI_API_KEY before running
-- Azure OpenAI fields are optional but wired through config.azure; guard new code against missing azure settings
-- Retain config validation so missing OPENAI_API_KEY exits immediately; extend validateConfig when introducing new required settings
+## The only runnable code
 
-## Development Workflow
+The single piece of executable code is the MCP server under `segments/segment-4-agentic-orchestration/mcp-demos/weather-server/`:
 
-- Install deps with `npm install`; run the demo with `npm start`, watch mode with `npm run dev`, tests with `npm test`
-- Node 18+ is enforced by package.json engines; prefer language features compatible with that baseline
-- When scripting data transformations, keep helpers in their language-specific folders (e.g., Python utilities in [resources](resources) or [knowledge](knowledge))
+- `npm install` - install `@modelcontextprotocol/sdk` and `zod`.
+- `npm start` - run the MCP server (`node server.js`).
+- `npm run inspect` - launch MCP Inspector against the local server.
 
-## Prompt Templates & Context
+Everything else in the repo is Markdown lesson content, reference docs, or assets.
 
-- PromptManager in [src/promptManager.js](src/promptManager.js) caches templates via Map; reuse loadTemplate instead of manual fs reads
-- Context is stored as Map entries merged into template variables; clear or override keys explicitly to avoid stale data
-- manageConversationHistory trims from newest messages first; rely on it for long chats instead of mutating history arrays directly
+## Authoring rules
 
-## Testing & Quality
+- Two-space list indentation; keep a blank line before and after headings, lists, and fenced code blocks (enforced by [../markdownlint.json](../markdownlint.json)).
+- Sentence-case headings; kebab-case directories and filenames.
+- Prefer short sections with tables or callouts so lessons stay scannable on screen shares.
+- Use relative links for assets and cross-references.
+- **Never embed real API keys** in lesson text. Reference `env.example` and remind learners to set their own environment variables.
 
-- [src/test.js](src/test.js) exercises template loading, substitution, context merge; add cases here when introducing new template features
-- Tests avoid external API calls, so they can run without OpenAI credentials; keep future tests deterministic
-- Logging follows emoji-prefixed messages in existing demos; stay consistent for readability during live sessions
+## Linting
 
-## Extended Materials
+- Lint before pushing: `npx markdownlint-cli2 "**/*.md" --config markdownlint.json --fix`.
+- The runner config `.markdownlint-cli2.jsonc` excludes vendored `knowledge/` and `node_modules/` content.
 
-- Large CSV datasets in [attachments](attachments) support workshop exercises; do not rewrite them unless updating official course material
-- Slide extraction scripts like [resources/convert_ppt.py](resources/convert_ppt.py) expect python-pptx; document extra tooling when expanding them
-- High-level prompting guidance resides in [context-engineering.md](context-engineering.md); align new documentation with its terminology
+## Key references
+
+- High-level prompting and context guidance: [../docs/context-engineering.md](../docs/context-engineering.md).
+- Course overview and segment table: [../README.md](../README.md).
+- Delivery plan: [../COURSE-PLAN-JUNE-2026.md](../COURSE-PLAN-JUNE-2026.md).
+- Contributor playbook: [../AGENTS.md](../AGENTS.md)
+

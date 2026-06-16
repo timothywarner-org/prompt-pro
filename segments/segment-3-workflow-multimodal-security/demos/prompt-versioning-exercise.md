@@ -87,7 +87,7 @@ Here is an example of a well-written report in this format:
 **Week of March 3-7, 2026**
 
 **Accomplishments**
-- Completed RoboAssist Pro 3000 firmware v2.4 certification (2 days ahead of schedule)
+- Completed WarehouseBot Pro firmware v2.4 certification (2 days ahead of schedule)
 - Reduced assembly line defect rate from 2.1% to 1.4% through sensor calibration update
 - Onboarded 3 new embedded systems engineers (team now at 42/45 headcount target)
 
@@ -100,7 +100,7 @@ Here is an example of a well-written report in this format:
 - [ACTION NEEDED] Supplier delay on LiDAR modules may push Q2 production start by 2 weeks. Need CEO approval to engage backup supplier at 12% cost premium.
 
 **Next Week Priorities**
-- Begin integration testing for RoboAssist Pro 3000 with warehouse management systems
+- Begin integration testing for WarehouseBot Pro with warehouse management systems
 - Interview 2 final candidates for embedded systems lead role
 - Present Q2 roadmap draft to product team
 ---

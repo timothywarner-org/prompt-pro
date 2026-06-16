@@ -1,8 +1,8 @@
-# Segment 3: Workflow, Multimodal, and Security
+# Segment 3: Workflow, Multimodal & Security
 
 **Duration:** 50 minutes
 **Level:** Intermediate
-**Last Updated:** April 2026
+**Last Updated:** June 2026
 
 ## Segment Overview
 
@@ -29,7 +29,7 @@ All exercises use a shared fictional company:
 - **Size:** 500 employees, $120M annual revenue
 - **Location:** Austin, TX
 - **CEO:** Maria Chen
-- **Industry:** Mid-size robotics manufacturer (industrial and consumer lines)
+- **Industry:** Mid-size robotics manufacturer (warehouse and logistics automation)
 
 ## File Inventory
 

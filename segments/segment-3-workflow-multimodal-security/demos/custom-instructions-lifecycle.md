@@ -33,7 +33,7 @@ Read through the instructions before pasting. Notice:
 Send this prompt to the project:
 
 ```text
-Write a one-page product announcement for our new RoboAssist Pro 3000
+Write a one-page product announcement for our new WarehouseBot Pro
 warehouse automation robot. Target audience is logistics managers at
 mid-size distribution centers.
 ```
@@ -75,7 +75,7 @@ Read through v2 and compare to v1:
 Send the identical product announcement prompt:
 
 ```text
-Write a one-page product announcement for our new RoboAssist Pro 3000
+Write a one-page product announcement for our new WarehouseBot Pro
 warehouse automation robot. Target audience is logistics managers at
 mid-size distribution centers.
 ```

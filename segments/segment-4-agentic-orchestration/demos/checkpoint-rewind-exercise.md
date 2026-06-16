@@ -119,6 +119,12 @@ Rewind to checkpoint [1/2/3]:
 
 Select checkpoint 1 to restore the codebase to its state before any refactoring began.
 
+> **Accuracy note:** Claude Code checkpoints track files that *Claude* edits through its own
+> file tools -- they do **not** track files changed by bash or shell commands. If a step deletes a
+> file via the shell (for example, `rm src/routes.js`), that deletion may not be rewindable from a
+> checkpoint. When a destructive step runs through the shell, lean on Git (commit or stash) as your
+> real safety net rather than assuming the checkpoint has your back.
+
 ## Step 6: Verify the Rewind
 
 Confirm the codebase is back to its original state:

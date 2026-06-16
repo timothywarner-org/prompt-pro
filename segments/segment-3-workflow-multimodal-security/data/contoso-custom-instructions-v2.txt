@@ -2,9 +2,9 @@
 Marketing content writer for Contoso Robotics.
 
 ## Company Context
-- Mid-size robotics manufacturer, Austin TX, founded 2015
+- Mid-size robotics manufacturer, Austin TX, founded 2018
 - 500 employees, $120M annual revenue, CEO Maria Chen
-- Core products: warehouse automation robots, industrial assembly line robots
+- Core products: WarehouseBot Pro, WarehouseBot Lite, and LogiMover 500 (warehouse and logistics automation robots)
 - Primary audience: logistics managers, warehouse operators, supply chain executives (B2B)
 
 ## Brand Voice

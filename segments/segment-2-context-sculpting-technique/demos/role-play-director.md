@@ -24,7 +24,7 @@ Paste this context block before each prompt.
 
 ```text
 CONTOSO ROBOTICS -- SUPPLY CHAIN RISK REPORT
-Date: April 2026 | Prepared by: Logistics Team
+Date: June 2026 | Prepared by: Logistics Team
 
 RISK 1: Battery Supply Disruption
 - Supplier: ShenPower Ltd. (Shenzhen, China)

@@ -16,7 +16,7 @@ An **O'Reilly Live Learning** course teaching business professionals how to extr
 
 | # | Segment | Duration | Key Topics |
 |---|---------|----------|------------|
-| 1 | [**Identity, Mindset & Context Foundations**](segments/segment-1-identity-mindset-context/) | 50 min | Pilot/copilot, anchor trap, prompt smell, context disclosure, inference |
+| 1 | [**Identity, Mindset & Context Foundations**](segments/segment-1-identity-mindset-context/) | 50 min | Pilot/co-pilot, anchor trap, prompt smell, context disclosure, inference |
 | 2 | [**Context Sculpting & Prompting Technique**](segments/segment-2-context-sculpting-technique/) | 50 min | Role-play, task decomposition, few-shot, chain-of-thought, meta-prompting |
 | 3 | [**Workflow, Multimodal & Security**](segments/segment-3-workflow-multimodal-security/) | 50 min | Custom instructions, prompt versioning, voice, cross-referencing, privacy |
 | 4 | [**Agentic Orchestration & Resilience**](segments/segment-4-agentic-orchestration/) | 50 min | LLM matching, subagents, checkpoints, MCP, Copilot Studio, breaking changes |
@@ -72,7 +72,7 @@ An **O'Reilly Live Learning** course teaching business professionals how to extr
 
 - **Microsoft 365 Copilot** - Notebooks, Agents, enterprise integration
 - **ChatGPT** - Projects, Custom GPTs, GPT Image 2, Vision
-- **Google Gemini** - Gems, Imagen 4, 1M+ token context (2M on Gemini 3.5 Pro)
+- **Google Gemini** - Gems, Imagen 4, ~1M-token context (Gemini 3.1 Pro)
 - **Claude** - Projects, long-form analysis, Claude Code
 
 ### Agentic AI
@@ -136,7 +136,7 @@ segments/
 ├─ segment-3-workflow-multimodal-security/  # Laws 15-22, versioning, privacy
 └─ segment-4-agentic-orchestration/         # Laws 23-26, subagents, MCP demos
 .github/                            # Issue templates, workflows, AI instructions
-COURSE-PLAN-APRIL-2026.md          # April 2026 delivery plan
+COURSE-PLAN-JUNE-2026.md           # June 2026 delivery plan
 ```
 
 **For instructors:** See [INSTRUCTOR-MANIFEST.md](docs/INSTRUCTOR-MANIFEST.md) for delivery guide.  
@@ -149,7 +149,7 @@ COURSE-PLAN-APRIL-2026.md          # April 2026 delivery plan
 - [Anthropic Context Engineering Guide](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
 - [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
 - [GitHub Copilot Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
-- [MCP Specification](https://spec.modelcontextprotocol.io/)
+- [MCP Specification](https://modelcontextprotocol.io/specification/2025-06-18)
 
 ---
 
@@ -172,9 +172,10 @@ Found a vulnerability or risky prompt scenario? Follow the disclosure steps in [
 - [AGENTS.md](AGENTS.md) - Contributor playbook
 - [CLAUDE.md](CLAUDE.md) - Copilot instructions
 - [INSTRUCTOR-MANIFEST.md](docs/INSTRUCTOR-MANIFEST.md) - Run-of-show notes
-- [COURSE-PLAN-APRIL-2026.md](COURSE-PLAN-APRIL-2026.md) - April 2026 delivery plan
+- [COURSE-PLAN-JUNE-2026.md](COURSE-PLAN-JUNE-2026.md) - June 2026 delivery plan
 - [markdownlint.json](markdownlint.json) & [Markdownlint workflow](.github/workflows/markdownlint-autofix.yml) - spacing rules + one-click lint/autofix
 
 ---
 
-**Ready to prompt like a pro? Let's transform how you work with AI!**
+**Ready to prompt like a pro? Let's transform how you work wi
+h AI!**

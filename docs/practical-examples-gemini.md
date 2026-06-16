@@ -12,8 +12,8 @@
 
 **Current models (June 2026):**
 
-- **Gemini 3.5 Pro** - Flagship (~2M context, Deep Think), enhanced instruction understanding
-- **Gemini 3.5 Flash** - Fast and efficient (1M context), high-volume tasks
+- **Gemini 3.1 Pro** - Flagship (~1M context, Deep Think), enhanced instruction understanding
+- **Gemini 3.1 Flash** - Fast and efficient (1M context), high-volume tasks
 - **Gemini 2.5 Pro** - Previous flagship, excellent reasoning
 
 **Key strengths:**
@@ -31,15 +31,15 @@
 
 ---
 
-## The Gemini 3.5 Mindset
+## The Gemini 3.1 Mindset
 
-**Current generation:** Gemini 3.5 is smarter about understanding intent. Elaborate prompts from Gemini 2.x are often unnecessary now.
+**Current generation:** Gemini 3.1 is smarter about understanding intent. Elaborate prompts from Gemini 2.x are often unnecessary now.
 
 From [Google's documentation](https://ai.google.dev/gemini-api/docs/prompting-strategies):
 
-> *"By default, Gemini 3.5 provides direct and efficient answers. If you need a more conversational or detailed response, you must explicitly request it."*
+> *"By default, Gemini 3.1 provides direct and efficient answers. If you need a more conversational or detailed response, you must explicitly request it."*
 
-**Three principles for Gemini 3.5:**
+**Three principles for Gemini 3.1:**
 
 1. **Clarity first** - State exactly what you want
 2. **Less is often more** - Don't over-engineer prompts
@@ -216,7 +216,7 @@ Follow Google's Python style guide.
 
 ## Example 6: Structured Output Control
 
-Gemini 3.5 excels at producing structured output.
+Gemini 3.1 excels at producing structured output.
 
 ### JSON Output
 
@@ -283,19 +283,19 @@ Priority:
 
 ---
 
-## Gemini 3.5 Specific Tips
+## Gemini 3.1 Specific Tips
 
 ### Temperature Setting
 
 From [Google's guide](https://ai.google.dev/gemini-api/docs/prompting-strategies):
 
-> *"When using Gemini 3.5 models, Google strongly recommends keeping the temperature at its default value of 1.0. Changing the temperature may lead to unexpected behavior, particularly in complex mathematical or reasoning tasks."*
+> *"When using Gemini 3.1 models, Google strongly recommends keeping the temperature at its default value of 1.0. Changing the temperature may lead to unexpected behavior, particularly in complex mathematical or reasoning tasks."*
 
 Leave temperature at default unless you have a specific reason.
 
 ### Request Verbosity Explicitly
 
-Gemini 3.5 defaults to concise:
+Gemini 3.1 defaults to concise:
 
 ```text
 ❌ "Explain machine learning" → Gets brief answer
@@ -376,7 +376,7 @@ Help me write a response to this email that:
 
 ## Common Gemini Pitfalls
 
-### Pitfall 1: Over-Engineering Prompts for Gemini 3.5
+### Pitfall 1: Over-Engineering Prompts for Gemini 3.1
 
 If you wrote elaborate prompts for Gemini 2.x:
 
@@ -386,7 +386,7 @@ If you wrote elaborate prompts for Gemini 2.x:
 ✅ Clear, direct prompts with necessary context only
 ```
 
-Gemini 3.5 understands intent better - elaborate scaffolding often isn't needed.
+Gemini 3.1 understands intent better - elaborate scaffolding often isn't needed.
 
 ### Pitfall 2: Not Leveraging Multimodal
 
@@ -411,7 +411,7 @@ In Google Workspace, Gemini knows where you are:
 
 ### Pitfall 4: Not Specifying Output Format
 
-Gemini 3.5 defaults to concise. Be explicit:
+Gemini 3.1 defaults to concise. Be explicit:
 
 ```text
 ❌ "Summarize this document"
@@ -487,7 +487,7 @@ Format response as:
 | Multiple files | Reference with @[filename] |
 | Need accuracy | "Cite sources" or "Only state what you can verify" |
 | Complex task | Break into steps, use "Let's think step by step" |
-| Gemini 3.5 | Simplify - it understands better |
+| Gemini 3.1 | Simplify - it understands better |
 
 ---
 
